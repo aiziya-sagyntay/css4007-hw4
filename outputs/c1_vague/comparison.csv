@@ -1,0 +1,6 @@
+Question,Original calls,Vague calls,Inputs changed,Original correct,Vague correct,Original answer,Vague answer
+Q-02,7,7,False,False,False,ANSWER: Harrowfield | 1.69 percentage points,ANSWER: Harrowfield | 1.69 percentage points
+Q-05,7,7,False,True,True,ANSWER: Coldharbour | 14235,ANSWER: Coldharbour | 14235
+Q-08,4,6,True,False,False,ANSWER: Brightwater | 72.46 million tenge,ANSWER: Brightwater | 72.46 million tenge
+Q-09,7,7,False,True,True,ANSWER: Millbrook | 0.6,ANSWER: Millbrook | 0.6
+Q-13,9,9,False,False,False,ANSWER: Coldharbour | 4.16%,ANSWER: Coldharbour | 4.16%

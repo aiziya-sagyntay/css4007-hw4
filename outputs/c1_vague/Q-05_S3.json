@@ -1,0 +1,298 @@
+{
+  "question_id": "Q-05",
+  "question": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "rounds_used": 4,
+  "unanswered": false,
+  "answer": "Coldharbour had the larger 2025 budget per resident by 14,235 tenge per resident.\n\nANSWER: Coldharbour | 14235",
+  "input_tokens": 3281,
+  "output_tokens": 251,
+  "total_seconds": 5.6887,
+  "api_calls": [
+    {
+      "round": 1,
+      "duration_seconds": 1.8208,
+      "input_tokens": 491,
+      "output_tokens": 117,
+      "finish_reason": "tool_calls"
+    },
+    {
+      "round": 2,
+      "duration_seconds": 1.5427,
+      "input_tokens": 810,
+      "output_tokens": 69,
+      "finish_reason": "tool_calls"
+    },
+    {
+      "round": 3,
+      "duration_seconds": 1.2346,
+      "input_tokens": 953,
+      "output_tokens": 31,
+      "finish_reason": "tool_calls"
+    },
+    {
+      "round": 4,
+      "duration_seconds": 1.0891,
+      "input_tokens": 1027,
+      "output_tokens": 34,
+      "finish_reason": "stop"
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_5cOO9MdwtmUb4F66jzaxzXp4",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Stonecairn\", \"field\": \"budget\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Stonecairn",
+        "field": "budget",
+        "year": 2025
+      },
+      "result": {
+        "district": "Stonecairn",
+        "field": "budget",
+        "year": 2025,
+        "value": 2884.6,
+        "unit": "million tenge",
+        "source_ids": [
+          "NR-06"
+        ]
+      },
+      "duration_seconds": 0.000383
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_BoFNyS10d5TzaAyZY4fAchRV",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Stonecairn\", \"field\": \"population\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Stonecairn",
+        "field": "population",
+        "year": 2025
+      },
+      "result": {
+        "district": "Stonecairn",
+        "field": "population",
+        "year": 2025,
+        "value": 14926,
+        "unit": "residents",
+        "source_ids": [
+          "NR-06"
+        ]
+      },
+      "duration_seconds": 0.000212
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_wp9M2zSK3lcuUTBfV6mhnc1V",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Coldharbour\", \"field\": \"budget\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Coldharbour",
+        "field": "budget",
+        "year": 2025
+      },
+      "result": {
+        "district": "Coldharbour",
+        "field": "budget",
+        "year": 2025,
+        "value": 2366.9,
+        "unit": "million tenge",
+        "source_ids": [
+          "NR-12"
+        ]
+      },
+      "duration_seconds": 0.000197
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_xaagbHCdkRm4IHWsX13TlDAX",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Coldharbour\", \"field\": \"population\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Coldharbour",
+        "field": "population",
+        "year": 2025
+      },
+      "result": {
+        "district": "Coldharbour",
+        "field": "population",
+        "year": 2025,
+        "value": 11407,
+        "unit": "residents",
+        "source_ids": [
+          "NR-12"
+        ]
+      },
+      "duration_seconds": 0.000184
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_HCVShICvQD9RQTPSr2Lz7Ing",
+      "tool": "calculate",
+      "arguments_raw": "{\"expression\": \"2884.6 * 1000000 / 14926\"}",
+      "arguments_parsed": {
+        "expression": "2884.6 * 1000000 / 14926"
+      },
+      "result": {
+        "expression": "2884.6 * 1000000 / 14926",
+        "value": 193260.08307651078
+      },
+      "duration_seconds": 7.2e-05
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_R5tOrHaGEv4vHXWrwalCBZuR",
+      "tool": "calculate",
+      "arguments_raw": "{\"expression\": \"2366.9 * 1000000 / 11407\"}",
+      "arguments_parsed": {
+        "expression": "2366.9 * 1000000 / 11407"
+      },
+      "result": {
+        "expression": "2366.9 * 1000000 / 11407",
+        "value": 207495.39756289998
+      },
+      "duration_seconds": 2.8e-05
+    },
+    {
+      "round": 3,
+      "tool_call_id": "call_HrKSsBS76TbC5G05GAi1FlA6",
+      "tool": "calculate",
+      "arguments_raw": "{\"expression\":\"207495.39756289998 - 193260.08307651078\"}",
+      "arguments_parsed": {
+        "expression": "207495.39756289998 - 193260.08307651078"
+      },
+      "result": {
+        "expression": "207495.39756289998 - 193260.08307651078",
+        "value": 14235.314486389194
+      },
+      "duration_seconds": 8.4e-05
+    }
+  ],
+  "messages": [
+    {
+      "role": "system",
+      "content": "Answer the fictional Nine Rivers Region question using ONLY the provided lookup and calculate tools. You do NOT have the documents. Look up every required factual value and use calculate for all arithmetic, including the final difference. Trust any correction notices applied by lookup. Do not invent values or use the 2019 archived profiles as current facts. If a tool fails, correct the request or report that you cannot answer. Finish with one line exactly like: ANSWER: <district or yes/no> | <number>. If the answer cannot be established, use ANSWER: UNANSWERED | NA. Round only the final difference or requested quantity to 0 decimal places."
+    },
+    {
+      "role": "user",
+      "content": "Which district had the larger 2025 budget per resident, Stonecairn or Coldharbour, and by how many tenge per resident?"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_5cOO9MdwtmUb4F66jzaxzXp4",
+          "function": {
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"budget\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_BoFNyS10d5TzaAyZY4fAchRV",
+          "function": {
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_wp9M2zSK3lcuUTBfV6mhnc1V",
+          "function": {
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"budget\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_xaagbHCdkRm4IHWsX13TlDAX",
+          "function": {
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_5cOO9MdwtmUb4F66jzaxzXp4",
+      "content": "{\"district\": \"Stonecairn\", \"field\": \"budget\", \"year\": 2025, \"value\": 2884.6, \"unit\": \"million tenge\", \"source_ids\": [\"NR-06\"]}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_BoFNyS10d5TzaAyZY4fAchRV",
+      "content": "{\"district\": \"Stonecairn\", \"field\": \"population\", \"year\": 2025, \"value\": 14926, \"unit\": \"residents\", \"source_ids\": [\"NR-06\"]}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_wp9M2zSK3lcuUTBfV6mhnc1V",
+      "content": "{\"district\": \"Coldharbour\", \"field\": \"budget\", \"year\": 2025, \"value\": 2366.9, \"unit\": \"million tenge\", \"source_ids\": [\"NR-12\"]}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_xaagbHCdkRm4IHWsX13TlDAX",
+      "content": "{\"district\": \"Coldharbour\", \"field\": \"population\", \"year\": 2025, \"value\": 11407, \"unit\": \"residents\", \"source_ids\": [\"NR-12\"]}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_HCVShICvQD9RQTPSr2Lz7Ing",
+          "function": {
+            "arguments": "{\"expression\": \"2884.6 * 1000000 / 14926\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_R5tOrHaGEv4vHXWrwalCBZuR",
+          "function": {
+            "arguments": "{\"expression\": \"2366.9 * 1000000 / 11407\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_HCVShICvQD9RQTPSr2Lz7Ing",
+      "content": "{\"expression\": \"2884.6 * 1000000 / 14926\", \"value\": 193260.08307651078}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_R5tOrHaGEv4vHXWrwalCBZuR",
+      "content": "{\"expression\": \"2366.9 * 1000000 / 11407\", \"value\": 207495.39756289998}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_HrKSsBS76TbC5G05GAi1FlA6",
+          "function": {
+            "arguments": "{\"expression\":\"207495.39756289998 - 193260.08307651078\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_HrKSsBS76TbC5G05GAi1FlA6",
+      "content": "{\"expression\": \"207495.39756289998 - 193260.08307651078\", \"value\": 14235.314486389194}"
+    },
+    {
+      "content": "Coldharbour had the larger 2025 budget per resident by 14,235 tenge per resident.\n\nANSWER: Coldharbour | 14235",
+      "role": "assistant",
+      "annotations": []
+    }
+  ]
+}
