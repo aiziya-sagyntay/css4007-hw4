@@ -1,0 +1,69 @@
+{
+  "question_id": "Q-10",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: Stonecairn | 8": 5
+  },
+  "answer": "ANSWER: Stonecairn | 8",
+  "samples": [
+    {
+      "text": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed_final_answer": "ANSWER: Stonecairn | 8",
+      "input_tokens": 2255,
+      "output_tokens": 49,
+      "cached_input_tokens": 2252,
+      "seconds": 0.9073,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed_final_answer": "ANSWER: Stonecairn | 8",
+      "input_tokens": 2255,
+      "output_tokens": 49,
+      "cached_input_tokens": 2252,
+      "seconds": 0.8027,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed_final_answer": "ANSWER: Stonecairn | 8",
+      "input_tokens": 2255,
+      "output_tokens": 49,
+      "cached_input_tokens": 2252,
+      "seconds": 0.7643,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed_final_answer": "ANSWER: Stonecairn | 8",
+      "input_tokens": 2255,
+      "output_tokens": 49,
+      "cached_input_tokens": 2252,
+      "seconds": 0.8608,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. The difference is 1845 − 1837 = 8 years.\n\nANSWER: Stonecairn | 8",
+      "parsed_final_answer": "ANSWER: Stonecairn | 8",
+      "input_tokens": 2255,
+      "output_tokens": 49,
+      "cached_input_tokens": 2252,
+      "seconds": 0.7452,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11275,
+  "output_tokens": 245,
+  "cached_input_tokens": 11260,
+  "seconds": 4.0807,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.002549
+}

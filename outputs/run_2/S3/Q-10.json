@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-10",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Stonecairn is older by 8 years.\n\nANSWER: Stonecairn | 8",
+  "rounds": 3,
+  "tool_calls": 3,
+  "logfile": "outputs/run_2/S3_logs/Q-10_S3.json",
+  "input_tokens": 2096,
+  "output_tokens": 114,
+  "cached_input_tokens": null,
+  "seconds": 2.7817,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.000556
+}

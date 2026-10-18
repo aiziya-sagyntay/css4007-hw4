@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-13",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: UNANSWERED | NA",
+  "raw_answer": "Stonecairn lost the largest percentage of population: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.54\\%\\).\n\nANSWER: Stonecairn | 3.54%",
+  "samples": [
+    {
+      "text": "Stonecairn lost the largest percentage of population: \\((15,473 - 14,926) / 15,473 \\times 100 = 3.54\\%\\).\n\nANSWER: Stonecairn | 3.54%",
+      "parsed_final_answer": "ANSWER: UNANSWERED | NA",
+      "input_tokens": 2237,
+      "output_tokens": 54,
+      "cached_input_tokens": 0,
+      "seconds": 1.0424,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2237,
+  "output_tokens": 54,
+  "cached_input_tokens": 0,
+  "seconds": 1.0424,
+  "unanswered": true,
+  "correct": false,
+  "estimated_cost_usd": 0.0005122
+}

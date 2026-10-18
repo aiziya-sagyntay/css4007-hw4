@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-05",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Coldharbour had the larger 2025 budget per resident, by **14,235 tenge per resident**.\n\nANSWER: Coldharbour | 14235",
+  "rounds": 4,
+  "tool_calls": 7,
+  "logfile": "outputs/run_2/S3_logs/Q-05_S3.json",
+  "input_tokens": 3601,
+  "output_tokens": 253,
+  "cached_input_tokens": null,
+  "seconds": 4.4356,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0010238
+}

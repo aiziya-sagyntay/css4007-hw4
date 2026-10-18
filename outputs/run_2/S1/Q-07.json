@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-07",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Stonecairn | 18.49",
+  "raw_answer": "Stonecairn has more paved road per 1,000 residents. Coldharbour: 52.45 km; Stonecairn: 33.96 km; difference: 18.49 km per 1,000 residents.\n\nANSWER: Stonecairn | 18.49",
+  "samples": [
+    {
+      "text": "Stonecairn has more paved road per 1,000 residents. Coldharbour: 52.45 km; Stonecairn: 33.96 km; difference: 18.49 km per 1,000 residents.\n\nANSWER: Stonecairn | 18.49",
+      "parsed_final_answer": "ANSWER: Stonecairn | 18.49",
+      "input_tokens": 2236,
+      "output_tokens": 64,
+      "cached_input_tokens": 2233,
+      "seconds": 2.0061,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2236,
+  "output_tokens": 64,
+  "cached_input_tokens": 2233,
+  "seconds": 2.0061,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.000524
+}

@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-04",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Millbrook has more pupils per school: 370.80 compared with Ashgrove’s 368.21, a difference of 2.59 pupils per school.\n\nANSWER: Millbrook | 2.59",
+  "rounds": 5,
+  "tool_calls": 7,
+  "logfile": "outputs/run_2/S3_logs/Q-04_S3.json",
+  "input_tokens": 4412,
+  "output_tokens": 230,
+  "cached_input_tokens": null,
+  "seconds": 5.9869,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0011584
+}

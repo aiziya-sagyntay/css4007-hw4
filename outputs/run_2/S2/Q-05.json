@@ -1,0 +1,73 @@
+{
+  "question_id": "Q-05",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: Coldharbour | 14346": 1,
+    "ANSWER: Coldharbour | 14291": 1,
+    "ANSWER: Coldharbour | 14318": 1,
+    "ANSWER: Coldharbour | 14358": 1,
+    "ANSWER: Coldharbour | 14334": 1
+  },
+  "answer": "ANSWER: Coldharbour | 14346",
+  "samples": [
+    {
+      "text": "Stonecairn: \\(2{,}884.6\\) million tenge ÷ \\(14{,}926\\) residents = \\(193{,}159\\) tenge per resident.\n\nColdharbour: \\(2{,}366.9\\) million tenge ÷ \\(11{,}407\\) residents = \\(207{,}505\\) tenge per resident.\n\nDifference: \\(207{,}505 - 193{,}159 = 14{,}346\\) tenge per resident.\n\nANSWER: Coldharbour | 14346",
+      "parsed_final_answer": "ANSWER: Coldharbour | 14346",
+      "input_tokens": 2260,
+      "output_tokens": 126,
+      "cached_input_tokens": 2257,
+      "seconds": 1.3978,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Using the corrected 2025 figures:\n\n- Stonecairn: 2,884.6 million tenge ÷ 14,926 residents = 193,214.0 tenge per resident\n- Coldharbour: 2,366.9 million tenge ÷ 11,407 residents = 207,505.0 tenge per resident\n\nColdharbour had the larger budget per resident by approximately 14,291 tenge per resident.\n\nANSWER: Coldharbour | 14291",
+      "parsed_final_answer": "ANSWER: Coldharbour | 14291",
+      "input_tokens": 2260,
+      "output_tokens": 107,
+      "cached_input_tokens": 2257,
+      "seconds": 1.1921,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Using 2025 figures:\n\n- Stonecairn: 2,884.6 million tenge ÷ 14,926 residents = 193,183 tenge per resident\n- Coldharbour: 2,366.9 million tenge ÷ 11,407 residents = 207,501 tenge per resident\n\nColdharbour had the larger budget per resident by approximately 14,318 tenge.\n\nANSWER: Coldharbour | 14318",
+      "parsed_final_answer": "ANSWER: Coldharbour | 14318",
+      "input_tokens": 2260,
+      "output_tokens": 99,
+      "cached_input_tokens": 2257,
+      "seconds": 1.1763,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Stonecairn: \\(2,884.6\\) million tenge ÷ \\(14,926\\) residents = \\(193,152.6\\) tenge per resident.\n\nColdharbour: \\(2,366.9\\) million tenge ÷ \\(11,407\\) residents = \\(207,510.3\\) tenge per resident.\n\nDifference: \\(207,510.3 - 193,152.6 = 14,357.7\\), which rounds to 14,358 tenge per resident.\n\nANSWER: Coldharbour | 14358",
+      "parsed_final_answer": "ANSWER: Coldharbour | 14358",
+      "input_tokens": 2260,
+      "output_tokens": 125,
+      "cached_input_tokens": 2257,
+      "seconds": 1.7866,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Using the corrected 2025 figures:\n\n- Stonecairn: 2,884.6 million tenge ÷ 14,926 residents = 193,177 tenge per resident\n- Coldharbour: 2,366.9 million tenge ÷ 11,407 residents = 207,511 tenge per resident\n\nColdharbour had the larger budget per resident by approximately 14,334 tenge per resident.\n\nANSWER: Coldharbour | 14334",
+      "parsed_final_answer": "ANSWER: Coldharbour | 14334",
+      "input_tokens": 2260,
+      "output_tokens": 103,
+      "cached_input_tokens": 2257,
+      "seconds": 1.3449,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11300,
+  "output_tokens": 560,
+  "cached_input_tokens": 11285,
+  "seconds": 6.8981,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.002932
+}

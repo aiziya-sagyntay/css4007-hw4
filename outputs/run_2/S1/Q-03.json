@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-03",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Lindenmoor | 5.3",
+  "raw_answer": "Lindenmoor: 2,151,400 m³ ÷ 29,051 residents ÷ 365 × 1,000 = 202.8 litres per resident per day.\n\nKelmarsh: 1,739 ML = 1,739,000 m³; ÷ 24,117 residents ÷ 365 × 1,000 = 197.5 litres per resident per day.\n\nDifference: 5.3 litres per resident per day.\n\nANSWER: Lindenmoor | 5.3",
+  "samples": [
+    {
+      "text": "Lindenmoor: 2,151,400 m³ ÷ 29,051 residents ÷ 365 × 1,000 = 202.8 litres per resident per day.\n\nKelmarsh: 1,739 ML = 1,739,000 m³; ÷ 24,117 residents ÷ 365 × 1,000 = 197.5 litres per resident per day.\n\nDifference: 5.3 litres per resident per day.\n\nANSWER: Lindenmoor | 5.3",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 5.3",
+      "input_tokens": 2232,
+      "output_tokens": 109,
+      "cached_input_tokens": 2229,
+      "seconds": 1.7336,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2232,
+  "output_tokens": 109,
+  "cached_input_tokens": 2229,
+  "seconds": 1.7336,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0005772
+}

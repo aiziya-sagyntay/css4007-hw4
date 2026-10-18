@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-13",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: UNANSWERED | NA",
+  "raw_answer": "Coldharbour lost the largest percentage: (11,902 − 11,407) ÷ 11,902 × 100 = 4.16%.\n\nANSWER: Coldharbour | 4.16%",
+  "samples": [
+    {
+      "text": "Coldharbour lost the largest percentage: (11,902 − 11,407) ÷ 11,902 × 100 = 4.16%.\n\nANSWER: Coldharbour | 4.16%",
+      "parsed_final_answer": "ANSWER: UNANSWERED | NA",
+      "input_tokens": 2237,
+      "output_tokens": 47,
+      "cached_input_tokens": 2234,
+      "seconds": 1.1862,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2237,
+  "output_tokens": 47,
+  "cached_input_tokens": 2234,
+  "seconds": 1.1862,
+  "unanswered": true,
+  "correct": false,
+  "estimated_cost_usd": 0.0005038
+}

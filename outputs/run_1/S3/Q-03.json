@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-03",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Lindenmoor used more water: **5.3 litres per resident per day** more than Kelmarsh.\n\nANSWER: Lindenmoor | 5.3",
+  "rounds": 4,
+  "tool_calls": 7,
+  "logfile": "outputs/run_1/S3_logs/Q-03_S3.json",
+  "input_tokens": 3633,
+  "output_tokens": 256,
+  "cached_input_tokens": null,
+  "seconds": 4.7065,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0010338
+}

@@ -1,0 +1,72 @@
+{
+  "question_id": "Q-17",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: Harrowfield | 885": 1,
+    "ANSWER: Harrowfield | 887": 2,
+    "ANSWER: Harrowfield | 884": 1,
+    "ANSWER: Harrowfield | 892": 1
+  },
+  "answer": "ANSWER: Harrowfield | 887",
+  "samples": [
+    {
+      "text": "Convert water use to cubic metres, then multiply by the tariff:\n\n- Harrowfield: 7,146 ML = 7,146,000 m³; cost = 7,146,000 × 142.35 = 1,017,? Wait compute: 7,146,000 × 142.35 = 1,017,? 142.35×7,146 = 1,017,? 142.35×7000=996,450; ×146=20,? 142.35×146=20,? 142.35×100=14,235; ×40=5,694; ×6=854.1 total 20,783.1; sum 1,017,233.1; ×1000 = 1,017,233,100 tenge. Per resident = 1,017,233,100 ÷ 90,212 ≈ 11,275.56.\n- Ossbridge: 3,862 ML = 3,862,000 m³; cost = 549,? 3,862×142.35=549,? 142.35×3800=540,930; ×62=8,? 142.35×62=8,825.7; total 549,755.7; ×1000=549,755,700 tenge. Per resident = 549,755,700 ÷ 52,904 ≈ 10,390.56.\n\nDifference ≈ 885 tenge per resident, so Harrowfield paid more.\n\nANSWER: Harrowfield | 885",
+      "parsed_final_answer": "ANSWER: Harrowfield | 885",
+      "input_tokens": 2270,
+      "output_tokens": 340,
+      "cached_input_tokens": 0,
+      "seconds": 2.8562,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Convert water use to cubic metres and multiply by the tariff; then divide by the 2025 population.\n\n- Harrowfield: 7,146 ML = 7,146,000 m³  \n  Total cost = 7,146,000 × 142.35 = 1,017,? Wait calculation: 7,146,000 × 142.35 = 1,017,?  \n  Per resident ≈ 11,277 tenge.\n- Ossbridge: 3,862 ML = 3,862,000 m³  \n  Per resident ≈ 10,390 tenge.\n\nDifference ≈ 887 tenge per resident, so Harrowfield paid more.\n\nANSWER: Harrowfield | 887",
+      "parsed_final_answer": "ANSWER: Harrowfield | 887",
+      "input_tokens": 2270,
+      "output_tokens": 156,
+      "cached_input_tokens": 2267,
+      "seconds": 1.9811,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Convert water use to cubic metres and multiply by the tariff; divide by the 2025 population.\n\n- Harrowfield: \\(7,146,000 \\times 142.35 \\div 90,212 = 11,278.19\\) tenge per resident\n- Ossbridge: \\(3,862,000 \\times 142.35 \\div 52,904 = 10,391.31\\) tenge per resident\n- Difference: \\(11,278.19 - 10,391.31 = 886.88\\), rounded to 0 decimals: **887 tenge**\n\nANSWER: Harrowfield | 887",
+      "parsed_final_answer": "ANSWER: Harrowfield | 887",
+      "input_tokens": 2270,
+      "output_tokens": 138,
+      "cached_input_tokens": 2267,
+      "seconds": 1.589,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Convert water use to cubic metres and multiply by the tariff; then divide by the 2025 population.\n\n- Harrowfield: \\(7{,}146\\) ML = \\(7{,}146{,}000\\) m³  \n  Cost per resident = \\(7{,}146{,}000 \\times 142.35 \\div 90{,}212 \\approx 11{,}275\\) tenge\n- Ossbridge: \\(3{,}862\\) ML = \\(3{,}862{,}000\\) m³  \n  Cost per resident = \\(3{,}862{,}000 \\times 142.35 \\div 52{,}904 \\approx 10{,}391\\) tenge\n\nDifference: approximately \\(884\\) tenge per resident.\n\nANSWER: Harrowfield | 884",
+      "parsed_final_answer": "ANSWER: Harrowfield | 884",
+      "input_tokens": 2270,
+      "output_tokens": 187,
+      "cached_input_tokens": 2267,
+      "seconds": 2.08,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Convert water use to cubic metres and multiply by the tariff:\n\n- **Harrowfield:** 7,146 ML = 7,146,000 m³; cost = 7,146,000 × 142.35 = 1,017,? Actually, comparing per resident, the common tariff cancels:\n  - Water per resident = 7,146,000 ÷ 90,212 ≈ 79.22 m³\n- **Ossbridge:** 3,862,000 ÷ 52,904 ≈ 72.95 m³\n\nDifference = 6.27 m³ per resident × 142.35 ≈ **892 tenge per resident**.\n\nANSWER: Harrowfield | 892",
+      "parsed_final_answer": "ANSWER: Harrowfield | 892",
+      "input_tokens": 2270,
+      "output_tokens": 155,
+      "cached_input_tokens": 2267,
+      "seconds": 2.0403,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11350,
+  "output_tokens": 976,
+  "cached_input_tokens": 9068,
+  "seconds": 10.547,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0034412
+}

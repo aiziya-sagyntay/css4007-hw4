@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-19",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Lindenmoor has the denser paved road network, by **0.035 km of road per square kilometre**.\n\nANSWER: Lindenmoor | 0.035",
+  "rounds": 4,
+  "tool_calls": 7,
+  "logfile": "outputs/run_1/S3_logs/Q-19_S3.json",
+  "input_tokens": 3575,
+  "output_tokens": 253,
+  "cached_input_tokens": null,
+  "seconds": 5.1538,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0010186
+}

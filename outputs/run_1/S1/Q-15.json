@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-15",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Kelmarsh | 27.77",
+  "raw_answer": "ANSWER: Kelmarsh | 27.77",
+  "samples": [
+    {
+      "text": "ANSWER: Kelmarsh | 27.77",
+      "parsed_final_answer": "ANSWER: Kelmarsh | 27.77",
+      "input_tokens": 2227,
+      "output_tokens": 13,
+      "cached_input_tokens": 0,
+      "seconds": 0.8333,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2227,
+  "output_tokens": 13,
+  "cached_input_tokens": 0,
+  "seconds": 0.8333,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.000461
+}

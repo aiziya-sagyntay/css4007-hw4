@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-09",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Millbrook | 0.5",
+  "raw_answer": "Brightwater density: 44,675 ÷ 921.4 = 48.5 residents/km².  \nMillbrook density: 37,203 ÷ 758.6 = 49.0 residents/km².  \nMillbrook is higher by 0.5 residents/km².\n\nANSWER: Millbrook | 0.5",
+  "samples": [
+    {
+      "text": "Brightwater density: 44,675 ÷ 921.4 = 48.5 residents/km².  \nMillbrook density: 37,203 ÷ 758.6 = 49.0 residents/km².  \nMillbrook is higher by 0.5 residents/km².\n\nANSWER: Millbrook | 0.5",
+      "parsed_final_answer": "ANSWER: Millbrook | 0.5",
+      "input_tokens": 2226,
+      "output_tokens": 73,
+      "cached_input_tokens": 2223,
+      "seconds": 1.2246,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2226,
+  "output_tokens": 73,
+  "cached_input_tokens": 2223,
+  "seconds": 1.2246,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0005328
+}

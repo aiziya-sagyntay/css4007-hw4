@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-15",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Redfen has more pupils per school: 314.70 versus Kelmarsh’s 297.09, a difference of 17.61 pupils per school.\n\nANSWER: Redfen | 17.61",
+  "rounds": 4,
+  "tool_calls": 7,
+  "logfile": "outputs/run_2/S3_logs/Q-15_S3.json",
+  "input_tokens": 3493,
+  "output_tokens": 242,
+  "cached_input_tokens": null,
+  "seconds": 4.5111,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.000989
+}

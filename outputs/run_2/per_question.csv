@@ -1,0 +1,100 @@
+question_id,strategy,correct,unanswered,answer,reference_answer,reference_value,input_tokens,output_tokens,seconds,estimated_cost_usd
+Q-01,S1,1,0,ANSWER: Ossbridge | 4.6,Ossbridge,4.6,2226,74,1.507,0.000534
+Q-01,S2,1,0,ANSWER: Ossbridge | 4.6,Ossbridge,4.6,11290,422,6.515,0.0027644
+Q-01,S3,1,0,"Ossbridge has the higher 2025 population density, by 4.6 residents per square kilometre.
+
+ANSWER: Ossbridge | 4.6",Ossbridge,4.6,3528,239,4.8721,0.0009924
+Q-02,S1,1,0,ANSWER: Harrowfield | 1.69,Harrowfield,1.69,2232,84,1.2147,0.0005472
+Q-02,S2,1,0,ANSWER: Harrowfield | 1.69,Harrowfield,1.69,11320,530,8.4444,0.0029
+Q-02,S3,1,0,"Harrowfield grew faster: 7.90% versus Tarnvale’s 6.21%, a difference of 1.69 percentage points.
+
+ANSWER: Harrowfield | 1.69",Harrowfield,1.69,3604,263,5.2504,0.0010364
+Q-03,S1,1,0,ANSWER: Lindenmoor | 5.3,Lindenmoor,5.3,2232,109,1.7336,0.0005772
+Q-03,S2,1,0,ANSWER: Lindenmoor | 5.3,Lindenmoor,5.3,11320,748,8.8048,0.0031616
+Q-03,S3,1,0,"Lindenmoor used more water: **5.3 litres per resident per day** more than Kelmarsh.
+
+ANSWER: Lindenmoor | 5.3",Lindenmoor,5.3,3633,256,5.6793,0.0010338
+Q-04,S1,1,0,ANSWER: Millbrook | 2.59,Millbrook,2.59,2227,68,1.3286,0.000527
+Q-04,S2,1,0,ANSWER: Millbrook | 2.59,Millbrook,2.59,11295,393,6.0953,0.0027306
+Q-04,S3,1,0,"Millbrook has more pupils per school: 370.80 compared with Ashgrove’s 368.21, a difference of 2.59 pupils per school.
+
+ANSWER: Millbrook | 2.59",Millbrook,2.59,4412,230,5.9869,0.0011584
+Q-05,S1,0,0,ANSWER: Coldharbour | 14298,Coldharbour,14235,2228,87,1.615,0.00055
+Q-05,S2,0,0,ANSWER: Coldharbour | 14346,Coldharbour,14235,11300,560,6.8981,0.002932
+Q-05,S3,1,0,"Coldharbour had the larger 2025 budget per resident, by **14,235 tenge per resident**.
+
+ANSWER: Coldharbour | 14235",Coldharbour,14235,3601,253,4.4356,0.0010238
+Q-06,S1,1,0,ANSWER: yes | 14069,yes,14069,2232,53,1.0207,0.00051
+Q-06,S2,1,0,ANSWER: yes | 14069,yes,14069,11320,286,5.3796,0.0026072
+Q-06,S3,1,0,"Yes. Redfen and Kelmarsh together have 14,069 more residents than Ossford.
+
+ANSWER: yes | 14069",yes,14069,2261,147,3.3794,0.0006286
+Q-07,S1,0,0,ANSWER: Stonecairn | 18.49,Coldharbour,18.5,2236,64,2.0061,0.000524
+Q-07,S2,1,0,ANSWER: Coldharbour | 18.49,Coldharbour,18.5,11340,570,7.8938,0.002952
+Q-07,S3,1,0,"Coldharbour has more paved road per 1,000 residents, by **18.50 km per 1,000 residents**.
+
+ANSWER: Coldharbour | 18.50",Coldharbour,18.5,3635,260,4.6875,0.001039
+Q-08,S1,0,0,ANSWER: Millbrook | 72.46,Brightwater,72.46,2234,69,1.367,0.0005296
+Q-08,S2,1,0,ANSWER: Brightwater | 72.46,Brightwater,72.46,11330,709,8.6995,0.0031168
+Q-08,S3,0,1,"Brightwater's households paid more, by 72.46 million tenge.
+
+ANSWER: Brightwater | 72.46 million tenge",Brightwater,72.46,2307,159,3.2847,0.0006522
+Q-09,S1,1,0,ANSWER: Millbrook | 0.5,Millbrook,0.6,2226,73,1.2246,0.0005328
+Q-09,S2,1,0,ANSWER: Millbrook | 0.5,Millbrook,0.6,11290,451,6.2195,0.0027992
+Q-09,S3,1,0,"Millbrook has the higher population density by **0.6 residents per square kilometre**.
+
+ANSWER: Millbrook | 0.6",Millbrook,0.6,3513,230,4.6654,0.0009786
+Q-10,S1,1,0,ANSWER: Stonecairn | 8,Stonecairn,8,2223,12,0.8412,0.000459
+Q-10,S2,1,0,ANSWER: Stonecairn | 8,Stonecairn,8,11275,245,4.0807,0.002549
+Q-10,S3,1,0,"Stonecairn is older by 8 years.
+
+ANSWER: Stonecairn | 8",Stonecairn,8,2096,114,2.7817,0.000556
+Q-11,S1,0,0,ANSWER: Redfen | 53.51,Redfen,56.1,2241,46,1.0286,0.0005034
+Q-11,S2,1,0,ANSWER: Redfen | 56.10,Redfen,56.1,11365,553,6.8538,0.0029366
+Q-11,S3,1,0,"Redfen has the fewest pupils per school: 314.70. The highest is Millbrook at 370.80, so the difference is 56.10 pupils per school.
+
+ANSWER: Redfen | 56.10",Redfen,56.1,4022,308,5.1308,0.001174
+Q-12,S1,1,0,ANSWER: Tarnvale | 64.5,Tarnvale,64.4,2229,83,1.1219,0.0005454
+Q-12,S2,1,0,ANSWER: Tarnvale | 64.4,Tarnvale,64.4,11305,636,7.5329,0.0030242
+Q-12,S3,1,0,"Tarnvale, by 64.4 thousand tenge per pupil.
+
+ANSWER: Tarnvale | 64.4",Tarnvale,64.4,3642,254,5.4241,0.0010332
+Q-13,S1,0,1,ANSWER: UNANSWERED | NA,Coldharbour,4.16,2237,47,1.1862,0.0005038
+Q-13,S2,0,1,ANSWER: UNANSWERED | NA,Coldharbour,4.16,11345,648,8.385,0.0030466
+Q-13,S3,0,1,"Coldharbour lost the largest percentage of its population: **4.16%**.
+
+ANSWER: Coldharbour | 4.16%",Coldharbour,4.16,2851,297,3.9593,0.0009266
+Q-14,S1,0,0,ANSWER: Ashgrove | 4.7,Ashgrove,4.9,2232,94,1.3284,0.0005592
+Q-14,S2,0,0,ANSWER: Tarnvale | 0.0,Ashgrove,4.9,11320,815,9.2214,0.003242
+Q-14,S3,1,0,"Ashgrove used more water: **4.9 litres per resident per day** more than Tarnvale.
+
+ANSWER: Ashgrove | 4.9",Ashgrove,4.9,3619,254,4.7526,0.0010286
+Q-15,S1,0,0,ANSWER: Kelmarsh | 4.97,Redfen,17.61,2227,13,0.9176,0.000461
+Q-15,S2,0,0,ANSWER: Redfen | 17.97,Redfen,17.61,11295,407,6.4228,0.0027474
+Q-15,S3,1,0,"Redfen has more pupils per school: 314.70 versus Kelmarsh’s 297.09, a difference of 17.61 pupils per school.
+
+ANSWER: Redfen | 17.61",Redfen,17.61,3493,242,4.5111,0.000989
+Q-16,S1,1,0,ANSWER: yes | 23.9,yes,23.9,2226,54,1.0308,0.00051
+Q-16,S2,1,0,ANSWER: yes | 23.9,yes,23.9,11290,329,5.3932,0.0026528
+Q-16,S3,1,0,"Yes. Ossbridge and Ossford together are larger than Tarnvale by 23.9 square kilometres.
+
+ANSWER: yes | 23.9",yes,23.9,2269,153,3.4944,0.0006374
+Q-17,S1,0,0,ANSWER: Harrowfield | 890,Harrowfield,884,2238,93,1.5163,0.0005592
+Q-17,S2,1,0,ANSWER: Harrowfield | 885,Harrowfield,884,11350,681,8.2621,0.0030872
+Q-17,S3,1,0,"Harrowfield households paid more: **884 tenge per resident** (rounded).  
+ANSWER: Harrowfield | 884",Harrowfield,884,3867,274,4.7674,0.0011022
+Q-18,S1,1,0,ANSWER: yes | 40013,yes,40013,2249,65,1.1707,0.0005278
+Q-18,S2,1,0,ANSWER: yes | 40014,yes,40013,11405,457,6.8353,0.0028294
+Q-18,S3,1,0,"Millbrook’s population grew by approximately 7.55% from 2020 to 2025. Applying the same growth rate, the projected 2030 population is **40,013 residents**, so it **would exceed 40,000**.
+
+ANSWER: yes | 40013",yes,40013,3074,184,3.7742,0.0008356
+Q-19,S1,1,0,ANSWER: Lindenmoor | 0.035,Lindenmoor,0.035,2226,81,1.0967,0.0005424
+Q-19,S2,1,0,ANSWER: Lindenmoor | 0.035,Lindenmoor,0.035,11290,483,7.0293,0.0028376
+Q-19,S3,1,0,"Lindenmoor has the denser paved road network by 0.035 km per square kilometre.
+
+ANSWER: Lindenmoor | 0.035",Lindenmoor,0.035,3575,249,4.9045,0.0010138
+Q-20,S1,0,0,ANSWER: Ashgrove | 2987,Ashgrove,2993,2239,129,1.6882,0.0006026
+Q-20,S2,0,0,ANSWER: Ashgrove | 2957,Ashgrove,2993,11355,652,14.7082,0.0030534
+Q-20,S3,1,0,"Ashgrove had the largest 2025 budget per resident. It exceeded Ossbridge, the lowest, by **2,993 tenge per resident**.
+
+ANSWER: Ashgrove | 2993",Ashgrove,2993,4167,332,4.8524,0.0012318

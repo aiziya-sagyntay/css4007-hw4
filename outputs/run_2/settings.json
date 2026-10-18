@@ -1,0 +1,41 @@
+{
+  "model": "gpt-5.6-luna",
+  "questions": [
+    "Q-01",
+    "Q-02",
+    "Q-03",
+    "Q-04",
+    "Q-05",
+    "Q-06",
+    "Q-07",
+    "Q-08",
+    "Q-09",
+    "Q-10",
+    "Q-11",
+    "Q-12",
+    "Q-13",
+    "Q-14",
+    "Q-15",
+    "Q-16",
+    "Q-17",
+    "Q-18",
+    "Q-19",
+    "Q-20"
+  ],
+  "strategy": [
+    "S1 direct",
+    "S2 think+vote",
+    "S3 tools"
+  ],
+  "s2_samples": 5,
+  "max_tool_rounds": 8,
+  "reasoning_effort": "none",
+  "temperature": "API default (not set)",
+  "answer_format": "ANSWER: <name or yes/no> | <number>",
+  "correctness_rule": "Exact label; rounded number within 1 last decimal place of reference value",
+  "reference_answers_used_only_after_model_response": true,
+  "estimated_cost_price_per_million_usd": {
+    "uncached_input": 0.2,
+    "output": 1.2
+  }
+}

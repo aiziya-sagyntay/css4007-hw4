@@ -1,0 +1,71 @@
+{
+  "question_id": "Q-14",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: Tarnvale | 0.0": 2,
+    "ANSWER: Ashgrove | 4.8": 2,
+    "ANSWER: Ashgrove | 4.7": 1
+  },
+  "answer": "ANSWER: Tarnvale | 0.0",
+  "samples": [
+    {
+      "text": "Using 2025 figures:\n\n- Tarnvale: \\(5{,}207\\) ML ÷ \\(71{,}388\\) residents ÷ 365 × 1,000 = **0.2 litres per resident per day**\n- Ashgrove: \\(4{,}390\\) ML ÷ \\(58{,}760\\) residents ÷ 365 × 1,000 = **0.2 litres per resident per day**\n\nThe unrounded difference is approximately **0.010 litres per resident per day**, with Tarnvale higher. Rounded to one decimal place, the difference is **0.0 litres**.\n\nANSWER: Tarnvale | 0.0",
+      "parsed_final_answer": "ANSWER: Tarnvale | 0.0",
+      "input_tokens": 2264,
+      "output_tokens": 144,
+      "cached_input_tokens": 2261,
+      "seconds": 1.7994,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) L.  \nAshgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) L.\n\nUsing 365 days:\n\n- Tarnvale: \\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 \\approx 199.8\\) L/resident/day\n- Ashgrove: \\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 \\approx 204.6\\) L/resident/day\n\nDifference: \\(204.6 - 199.8 = 4.8\\) L/resident/day.\n\nANSWER: Ashgrove | 4.8",
+      "parsed_final_answer": "ANSWER: Ashgrove | 4.8",
+      "input_tokens": 2264,
+      "output_tokens": 195,
+      "cached_input_tokens": 2261,
+      "seconds": 2.0599,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Using 2025 figures:\n\n- **Tarnvale:** 5,207 ML = 5,207,000,000 L; \\(5,207,000,000 \\div 71,388 \\div 365 \\approx 199.9\\) L per resident per day.\n- **Ashgrove:** 4,390 ML = 4,390,000,000 L; \\(4,390,000,000 \\div 58,760 \\div 365 \\approx 204.7\\) L per resident per day.\n\nAshgrove’s households used approximately **4.8 more litres per resident per day**.\n\nANSWER: Ashgrove | 4.8",
+      "parsed_final_answer": "ANSWER: Ashgrove | 4.8",
+      "input_tokens": 2264,
+      "output_tokens": 146,
+      "cached_input_tokens": 2261,
+      "seconds": 1.7819,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Using 2025 figures:\n\n- Tarnvale: \\(5{,}207\\) ML ÷ \\(71{,}388\\) residents ÷ 365 × 1,000 = **0.2 L per resident per day**\n- Ashgrove: \\(4{,}390\\) ML ÷ \\(58{,}760\\) residents ÷ 365 × 1,000 = **0.2 L per resident per day**\n\nBefore rounding, Tarnvale’s rate is higher by approximately \\(0.0033\\) litres per resident per day, which rounds to **0.0 litres** at one decimal place.\n\nANSWER: Tarnvale | 0.0",
+      "parsed_final_answer": "ANSWER: Tarnvale | 0.0",
+      "input_tokens": 2264,
+      "output_tokens": 145,
+      "cached_input_tokens": 2261,
+      "seconds": 1.763,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Tarnvale: \\(5{,}207\\) ML \\(= 5{,}207{,}000{,}000\\) litres.  \n\\(5{,}207{,}000{,}000 \\div 71{,}388 \\div 365 \\approx 199.9\\) litres per resident per day.\n\nAshgrove: \\(4{,}390\\) ML \\(= 4{,}390{,}000{,}000\\) litres.  \n\\(4{,}390{,}000{,}000 \\div 58{,}760 \\div 365 \\approx 204.6\\) litres per resident per day.\n\nDifference: \\(204.6 - 199.9 = 4.7\\) litres per resident per day.\n\nANSWER: Ashgrove | 4.7",
+      "parsed_final_answer": "ANSWER: Ashgrove | 4.7",
+      "input_tokens": 2264,
+      "output_tokens": 185,
+      "cached_input_tokens": 2261,
+      "seconds": 1.8167,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11320,
+  "output_tokens": 815,
+  "cached_input_tokens": 11305,
+  "seconds": 9.2214,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.003242
+}

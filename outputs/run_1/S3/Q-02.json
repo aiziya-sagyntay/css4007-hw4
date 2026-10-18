@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-02",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Harrowfield grew faster: 7.90% versus Tarnvale’s 6.21%, a difference of 1.69 percentage points.\n\nANSWER: Harrowfield | 1.69 percentage points",
+  "rounds": 4,
+  "tool_calls": 7,
+  "logfile": "outputs/run_1/S3_logs/Q-02_S3.json",
+  "input_tokens": 3604,
+  "output_tokens": 265,
+  "cached_input_tokens": null,
+  "seconds": 5.1868,
+  "unanswered": true,
+  "correct": false,
+  "estimated_cost_usd": 0.0010388
+}

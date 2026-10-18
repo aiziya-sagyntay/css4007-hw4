@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-17",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Harrowfield | 890",
+  "raw_answer": "Harrowfield households used 7,146,000 cubic metres, costing 1,017,731,100 tenge, or about 11,281 tenge per resident. Ossbridge households used 3,862,000 cubic metres, costing 549,770,700 tenge, or about 10,391 tenge per resident. The difference is about 890 tenge per resident.\n\nANSWER: Harrowfield | 890",
+  "samples": [
+    {
+      "text": "Harrowfield households used 7,146,000 cubic metres, costing 1,017,731,100 tenge, or about 11,281 tenge per resident. Ossbridge households used 3,862,000 cubic metres, costing 549,770,700 tenge, or about 10,391 tenge per resident. The difference is about 890 tenge per resident.\n\nANSWER: Harrowfield | 890",
+      "parsed_final_answer": "ANSWER: Harrowfield | 890",
+      "input_tokens": 2238,
+      "output_tokens": 93,
+      "cached_input_tokens": 2235,
+      "seconds": 1.5163,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2238,
+  "output_tokens": 93,
+  "cached_input_tokens": 2235,
+  "seconds": 1.5163,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0005592
+}

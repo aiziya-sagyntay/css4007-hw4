@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-13",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Coldharbour lost the largest percentage of its population: **4.16%**.\n\nANSWER: Coldharbour | 4.16%",
+  "rounds": 3,
+  "tool_calls": 9,
+  "logfile": "outputs/run_2/S3_logs/Q-13_S3.json",
+  "input_tokens": 2851,
+  "output_tokens": 297,
+  "cached_input_tokens": null,
+  "seconds": 3.9593,
+  "unanswered": true,
+  "correct": false,
+  "estimated_cost_usd": 0.0009266
+}

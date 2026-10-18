@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-16",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Yes. Ossbridge and Ossford together are larger than Tarnvale by 23.9 square kilometres.\n\nANSWER: yes | 23.9",
+  "rounds": 3,
+  "tool_calls": 4,
+  "logfile": "outputs/run_2/S3_logs/Q-16_S3.json",
+  "input_tokens": 2269,
+  "output_tokens": 153,
+  "cached_input_tokens": null,
+  "seconds": 3.4944,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0006374
+}

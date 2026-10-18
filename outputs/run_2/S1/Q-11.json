@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-11",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Redfen | 53.51",
+  "raw_answer": "Redfen: 314.70 pupils per school; Ashgrove has the highest at 368.21, a difference of 53.51 pupils per school.\n\nANSWER: Redfen | 53.51",
+  "samples": [
+    {
+      "text": "Redfen: 314.70 pupils per school; Ashgrove has the highest at 368.21, a difference of 53.51 pupils per school.\n\nANSWER: Redfen | 53.51",
+      "parsed_final_answer": "ANSWER: Redfen | 53.51",
+      "input_tokens": 2241,
+      "output_tokens": 46,
+      "cached_input_tokens": 2238,
+      "seconds": 1.0286,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2241,
+  "output_tokens": 46,
+  "cached_input_tokens": 2238,
+  "seconds": 1.0286,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0005034
+}

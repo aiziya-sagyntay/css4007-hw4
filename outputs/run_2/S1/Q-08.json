@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-08",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Millbrook | 72.46",
+  "raw_answer": "Millbrook’s households paid more. Brightwater used 3,315 ML and Millbrook used 2,806 ML, a difference of 509,000 m³. At 142.35 tenge per m³, the difference was 72.46 million tenge.\n\nANSWER: Millbrook | 72.46",
+  "samples": [
+    {
+      "text": "Millbrook’s households paid more. Brightwater used 3,315 ML and Millbrook used 2,806 ML, a difference of 509,000 m³. At 142.35 tenge per m³, the difference was 72.46 million tenge.\n\nANSWER: Millbrook | 72.46",
+      "parsed_final_answer": "ANSWER: Millbrook | 72.46",
+      "input_tokens": 2234,
+      "output_tokens": 69,
+      "cached_input_tokens": 2231,
+      "seconds": 1.367,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2234,
+  "output_tokens": 69,
+  "cached_input_tokens": 2231,
+  "seconds": 1.367,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0005296
+}

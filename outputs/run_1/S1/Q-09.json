@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-09",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Millbrook | 0.5",
+  "raw_answer": "Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km². Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km². Millbrook is higher by 0.5 residents/km².\n\nANSWER: Millbrook | 0.5",
+  "samples": [
+    {
+      "text": "Brightwater: 44,675 ÷ 921.4 = 48.5 residents/km². Millbrook: 37,203 ÷ 758.6 = 49.0 residents/km². Millbrook is higher by 0.5 residents/km².\n\nANSWER: Millbrook | 0.5",
+      "parsed_final_answer": "ANSWER: Millbrook | 0.5",
+      "input_tokens": 2226,
+      "output_tokens": 69,
+      "cached_input_tokens": 2223,
+      "seconds": 1.0793,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2226,
+  "output_tokens": 69,
+  "cached_input_tokens": 2223,
+  "seconds": 1.0793,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.000528
+}

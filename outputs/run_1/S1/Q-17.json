@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-17",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Harrowfield | 87",
+  "raw_answer": "Harrowfield households used 7,146 ML for 90,212 residents; Ossbridge households used 3,862 ML for 52,904 residents. Applying the same tariff, Harrowfield paid approximately 1,126 tenge per resident versus 1,039 tenge for Ossbridge, a difference of about 87 tenge per resident.\n\nANSWER: Harrowfield | 87",
+  "samples": [
+    {
+      "text": "Harrowfield households used 7,146 ML for 90,212 residents; Ossbridge households used 3,862 ML for 52,904 residents. Applying the same tariff, Harrowfield paid approximately 1,126 tenge per resident versus 1,039 tenge for Ossbridge, a difference of about 87 tenge per resident.\n\nANSWER: Harrowfield | 87",
+      "parsed_final_answer": "ANSWER: Harrowfield | 87",
+      "input_tokens": 2238,
+      "output_tokens": 84,
+      "cached_input_tokens": 0,
+      "seconds": 1.4514,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2238,
+  "output_tokens": 84,
+  "cached_input_tokens": 0,
+  "seconds": 1.4514,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0005484
+}

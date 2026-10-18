@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-08",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Brightwater's households paid more, by 72.46 million tenge.\n\nANSWER: Brightwater | 72.46 million tenge",
+  "rounds": 3,
+  "tool_calls": 4,
+  "logfile": "outputs/run_1/S3_logs/Q-08_S3.json",
+  "input_tokens": 2307,
+  "output_tokens": 159,
+  "cached_input_tokens": null,
+  "seconds": 3.7519,
+  "unanswered": true,
+  "correct": false,
+  "estimated_cost_usd": 0.0006522
+}

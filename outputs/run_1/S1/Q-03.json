@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-03",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Lindenmoor | 5.2",
+  "raw_answer": "Lindenmoor used more water per resident per day. Lindenmoor: \\(2{,}151{,}400\\ \\text{m}^3 \\times 1{,}000 / (29{,}051 \\times 365) = 202.8\\) litres; Kelmarsh: \\(1{,}739{,}000 / (24{,}117 \\times 365) = 197.6\\) litres. Difference: 5.2 litres per resident per day.\n\nANSWER: Lindenmoor | 5.2",
+  "samples": [
+    {
+      "text": "Lindenmoor used more water per resident per day. Lindenmoor: \\(2{,}151{,}400\\ \\text{m}^3 \\times 1{,}000 / (29{,}051 \\times 365) = 202.8\\) litres; Kelmarsh: \\(1{,}739{,}000 / (24{,}117 \\times 365) = 197.6\\) litres. Difference: 5.2 litres per resident per day.\n\nANSWER: Lindenmoor | 5.2",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 5.2",
+      "input_tokens": 2232,
+      "output_tokens": 120,
+      "cached_input_tokens": 0,
+      "seconds": 1.3761,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2232,
+  "output_tokens": 120,
+  "cached_input_tokens": 0,
+  "seconds": 1.3761,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0005904
+}

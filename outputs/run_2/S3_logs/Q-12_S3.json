@@ -1,0 +1,298 @@
+{
+  "question_id": "Q-12",
+  "question": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?",
+  "model": "gpt-5.6-luna",
+  "max_rounds": 8,
+  "rounds_used": 4,
+  "unanswered": false,
+  "answer": "Tarnvale, by 64.4 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.4",
+  "input_tokens": 3642,
+  "output_tokens": 254,
+  "total_seconds": 5.4241,
+  "api_calls": [
+    {
+      "round": 1,
+      "duration_seconds": 1.8473,
+      "input_tokens": 572,
+      "output_tokens": 119,
+      "finish_reason": "tool_calls"
+    },
+    {
+      "round": 2,
+      "duration_seconds": 1.4132,
+      "input_tokens": 897,
+      "output_tokens": 69,
+      "finish_reason": "tool_calls"
+    },
+    {
+      "round": 3,
+      "duration_seconds": 1.1819,
+      "input_tokens": 1042,
+      "output_tokens": 39,
+      "finish_reason": "tool_calls"
+    },
+    {
+      "round": 4,
+      "duration_seconds": 0.9801,
+      "input_tokens": 1131,
+      "output_tokens": 27,
+      "finish_reason": "stop"
+    }
+  ],
+  "tool_calls": [
+    {
+      "round": 1,
+      "tool_call_id": "call_uAoRXaRLnG0Jj2GucnQD56rl",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Harrowfield\", \"field\": \"budget\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Harrowfield",
+        "field": "budget",
+        "year": 2025
+      },
+      "result": {
+        "district": "Harrowfield",
+        "field": "budget",
+        "year": 2025,
+        "value": 16021.7,
+        "unit": "million tenge",
+        "source_ids": [
+          "NR-07"
+        ]
+      },
+      "duration_seconds": 0.000361
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_wGyYdmAAyQILGjP7xyWa06dt",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Harrowfield\", \"field\": \"pupils\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Harrowfield",
+        "field": "pupils",
+        "year": 2025
+      },
+      "result": {
+        "district": "Harrowfield",
+        "field": "pupils",
+        "year": 2025,
+        "value": 13904,
+        "unit": "pupils",
+        "source_ids": [
+          "NR-07"
+        ]
+      },
+      "duration_seconds": 0.000221
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_qifva0cIRo4tsTBmGvvqdOBh",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Tarnvale\", \"field\": \"budget\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Tarnvale",
+        "field": "budget",
+        "year": 2025
+      },
+      "result": {
+        "district": "Tarnvale",
+        "field": "budget",
+        "year": 2025,
+        "value": 12960.3,
+        "unit": "million tenge",
+        "source_ids": [
+          "NR-03"
+        ]
+      },
+      "duration_seconds": 0.000198
+    },
+    {
+      "round": 1,
+      "tool_call_id": "call_G3C3hY4O96FS48FIVrwD4Be9",
+      "tool": "lookup",
+      "arguments_raw": "{\"district\": \"Tarnvale\", \"field\": \"pupils\", \"year\": 2025}",
+      "arguments_parsed": {
+        "district": "Tarnvale",
+        "field": "pupils",
+        "year": 2025
+      },
+      "result": {
+        "district": "Tarnvale",
+        "field": "pupils",
+        "year": 2025,
+        "value": 10652,
+        "unit": "pupils",
+        "source_ids": [
+          "NR-03"
+        ]
+      },
+      "duration_seconds": 0.000204
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_EkrPiTnOvzQcfcsV6Cf8kTJ1",
+      "tool": "calculate",
+      "arguments_raw": "{\"expression\": \"16021.7 * 1000000 / 13904\"}",
+      "arguments_parsed": {
+        "expression": "16021.7 * 1000000 / 13904"
+      },
+      "result": {
+        "expression": "16021.7 * 1000000 / 13904",
+        "value": 1152308.6881472957
+      },
+      "duration_seconds": 7.4e-05
+    },
+    {
+      "round": 2,
+      "tool_call_id": "call_l6G029uU6kqU5RWBZtYsu6LV",
+      "tool": "calculate",
+      "arguments_raw": "{\"expression\": \"12960.3 * 1000000 / 10652\"}",
+      "arguments_parsed": {
+        "expression": "12960.3 * 1000000 / 10652"
+      },
+      "result": {
+        "expression": "12960.3 * 1000000 / 10652",
+        "value": 1216701.0889973715
+      },
+      "duration_seconds": 2.7e-05
+    },
+    {
+      "round": 3,
+      "tool_call_id": "call_ZORPdTkFxgXrgoex7kxWuSk1",
+      "tool": "calculate",
+      "arguments_raw": "{\"expression\":\"(1216701.0889973715 - 1152308.6881472957) / 1000\"}",
+      "arguments_parsed": {
+        "expression": "(1216701.0889973715 - 1152308.6881472957) / 1000"
+      },
+      "result": {
+        "expression": "(1216701.0889973715 - 1152308.6881472957) / 1000",
+        "value": 64.39240085007576
+      },
+      "duration_seconds": 8.1e-05
+    }
+  ],
+  "messages": [
+    {
+      "role": "system",
+      "content": "Answer the fictional Nine Rivers Region question using ONLY the provided lookup and calculate tools. You do NOT have the documents. Look up every required factual value and use calculate for all arithmetic, including the final difference. Trust any correction notices applied by lookup. Do not invent values or use the 2019 archived profiles as current facts. If a tool fails, correct the request or report that you cannot answer. Finish with one line exactly like: ANSWER: <district or yes/no> | <number>. If the answer cannot be established, use ANSWER: UNANSWERED | NA. Round only the final difference or requested quantity to 1 decimal places."
+    },
+    {
+      "role": "user",
+      "content": "Which district's 2025 budget works out higher per school pupil, Harrowfield or Tarnvale, and by how many thousand tenge per pupil?"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_uAoRXaRLnG0Jj2GucnQD56rl",
+          "function": {
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_wGyYdmAAyQILGjP7xyWa06dt",
+          "function": {
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"pupils\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_qifva0cIRo4tsTBmGvvqdOBh",
+          "function": {
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"budget\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_G3C3hY4O96FS48FIVrwD4Be9",
+          "function": {
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"pupils\", \"year\": 2025}",
+            "name": "lookup"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_uAoRXaRLnG0Jj2GucnQD56rl",
+      "content": "{\"district\": \"Harrowfield\", \"field\": \"budget\", \"year\": 2025, \"value\": 16021.7, \"unit\": \"million tenge\", \"source_ids\": [\"NR-07\"]}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_wGyYdmAAyQILGjP7xyWa06dt",
+      "content": "{\"district\": \"Harrowfield\", \"field\": \"pupils\", \"year\": 2025, \"value\": 13904, \"unit\": \"pupils\", \"source_ids\": [\"NR-07\"]}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_qifva0cIRo4tsTBmGvvqdOBh",
+      "content": "{\"district\": \"Tarnvale\", \"field\": \"budget\", \"year\": 2025, \"value\": 12960.3, \"unit\": \"million tenge\", \"source_ids\": [\"NR-03\"]}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_G3C3hY4O96FS48FIVrwD4Be9",
+      "content": "{\"district\": \"Tarnvale\", \"field\": \"pupils\", \"year\": 2025, \"value\": 10652, \"unit\": \"pupils\", \"source_ids\": [\"NR-03\"]}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_EkrPiTnOvzQcfcsV6Cf8kTJ1",
+          "function": {
+            "arguments": "{\"expression\": \"16021.7 * 1000000 / 13904\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        },
+        {
+          "id": "call_l6G029uU6kqU5RWBZtYsu6LV",
+          "function": {
+            "arguments": "{\"expression\": \"12960.3 * 1000000 / 10652\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_EkrPiTnOvzQcfcsV6Cf8kTJ1",
+      "content": "{\"expression\": \"16021.7 * 1000000 / 13904\", \"value\": 1152308.6881472957}"
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_l6G029uU6kqU5RWBZtYsu6LV",
+      "content": "{\"expression\": \"12960.3 * 1000000 / 10652\", \"value\": 1216701.0889973715}"
+    },
+    {
+      "role": "assistant",
+      "annotations": [],
+      "tool_calls": [
+        {
+          "id": "call_ZORPdTkFxgXrgoex7kxWuSk1",
+          "function": {
+            "arguments": "{\"expression\":\"(1216701.0889973715 - 1152308.6881472957) / 1000\"}",
+            "name": "calculate"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_ZORPdTkFxgXrgoex7kxWuSk1",
+      "content": "{\"expression\": \"(1216701.0889973715 - 1152308.6881472957) / 1000\", \"value\": 64.39240085007576}"
+    },
+    {
+      "content": "Tarnvale, by 64.4 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.4",
+      "role": "assistant",
+      "annotations": []
+    }
+  ]
+}

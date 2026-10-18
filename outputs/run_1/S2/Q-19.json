@@ -1,0 +1,70 @@
+{
+  "question_id": "Q-19",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: Lindenmoor | 0.035": 4,
+    "ANSWER: Lindenmoor | 0.034": 1
+  },
+  "answer": "ANSWER: Lindenmoor | 0.035",
+  "samples": [
+    {
+      "text": "Road density is calculated as paved road length divided by area:\n\n- Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²\n- Redfen: 244.6 ÷ 677.1 = 0.361 km/km²\n\nLindenmoor is denser by 0.396 − 0.361 = 0.035 km per square kilometre.\n\nANSWER: Lindenmoor | 0.035",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 0.035",
+      "input_tokens": 2258,
+      "output_tokens": 99,
+      "cached_input_tokens": 0,
+      "seconds": 1.4374,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km².  \nRedfen: \\(244.6 \\div 677.1 = 0.361\\) km/km².  \nDifference: \\(0.396 - 0.361 = 0.035\\) km/km².\n\nANSWER: Lindenmoor | 0.035",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 0.035",
+      "input_tokens": 2258,
+      "output_tokens": 87,
+      "cached_input_tokens": 2255,
+      "seconds": 1.3856,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Paved road density:\n\n- Lindenmoor: 402.3 ÷ 1,015.7 = 0.396 km/km²\n- Redfen: 244.6 ÷ 677.1 = 0.361 km/km²\n\nLindenmoor is denser by 0.034 km of road per square kilometre.\n\nANSWER: Lindenmoor | 0.034",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 0.034",
+      "input_tokens": 2258,
+      "output_tokens": 84,
+      "cached_input_tokens": 2255,
+      "seconds": 1.4325,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Lindenmoor: \\(402.3 \\div 1,015.7 = 0.396\\) km/km².  \nRedfen: \\(244.6 \\div 677.1 = 0.361\\) km/km².  \nDifference: \\(0.396 - 0.361 = 0.035\\) km/km².\n\nANSWER: Lindenmoor | 0.035",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 0.035",
+      "input_tokens": 2258,
+      "output_tokens": 87,
+      "cached_input_tokens": 2255,
+      "seconds": 1.1416,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Using corrected/current 2025 figures:\n\n- Lindenmoor: 402.3 km ÷ 1,015.7 km² = 0.396 km/km²\n- Redfen: 244.6 km ÷ 677.1 km² = 0.361 km/km²\n\nDifference: 0.396 − 0.361 = 0.035 km of road per square kilometre.\n\nANSWER: Lindenmoor | 0.035",
+      "parsed_final_answer": "ANSWER: Lindenmoor | 0.035",
+      "input_tokens": 2258,
+      "output_tokens": 98,
+      "cached_input_tokens": 2255,
+      "seconds": 1.3049,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11290,
+  "output_tokens": 455,
+  "cached_input_tokens": 9020,
+  "seconds": 6.7025,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.002804
+}

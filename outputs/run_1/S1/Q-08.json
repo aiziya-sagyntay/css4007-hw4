@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-08",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Brightwater | 72.46",
+  "raw_answer": "Brightwater’s households paid more. The difference in water use was 3,315 − 2,806 = 509 megalitres = 509,000 cubic metres. At 142.35 tenge per cubic metre, the difference was 72,455,? 509,000 × 142.35 = 72,455,? Calculating: 142.35 × 509 = 72,? 142.35 × 500 = 71,175; ×9 = 1,281.15; total 72,456.15 thousand tenge = 72.46 million tenge.\n\nANSWER: Brightwater | 72.46",
+  "samples": [
+    {
+      "text": "Brightwater’s households paid more. The difference in water use was 3,315 − 2,806 = 509 megalitres = 509,000 cubic metres. At 142.35 tenge per cubic metre, the difference was 72,455,? 509,000 × 142.35 = 72,455,? Calculating: 142.35 × 509 = 72,? 142.35 × 500 = 71,175; ×9 = 1,281.15; total 72,456.15 thousand tenge = 72.46 million tenge.\n\nANSWER: Brightwater | 72.46",
+      "parsed_final_answer": "ANSWER: Brightwater | 72.46",
+      "input_tokens": 2234,
+      "output_tokens": 142,
+      "cached_input_tokens": 0,
+      "seconds": 1.7702,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2234,
+  "output_tokens": 142,
+  "cached_input_tokens": 0,
+  "seconds": 1.7702,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0006172
+}

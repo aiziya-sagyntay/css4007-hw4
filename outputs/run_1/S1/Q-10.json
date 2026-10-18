@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-10",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Stonecairn | 8",
+  "raw_answer": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Stonecairn is 8 years older.\n\nANSWER: Stonecairn | 8",
+  "samples": [
+    {
+      "text": "Stonecairn was founded in 1837, while Coldharbour was founded in 1845. Stonecairn is 8 years older.\n\nANSWER: Stonecairn | 8",
+      "parsed_final_answer": "ANSWER: Stonecairn | 8",
+      "input_tokens": 2223,
+      "output_tokens": 44,
+      "cached_input_tokens": 0,
+      "seconds": 1.0342,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2223,
+  "output_tokens": 44,
+  "cached_input_tokens": 0,
+  "seconds": 1.0342,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0004974
+}

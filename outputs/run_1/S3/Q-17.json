@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-17",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: UNANSWERED | NA",
+  "rounds": 8,
+  "tool_calls": 13,
+  "logfile": "outputs/run_1/S3_logs/Q-17_S3.json",
+  "input_tokens": 8953,
+  "output_tokens": 380,
+  "cached_input_tokens": null,
+  "seconds": 7.9855,
+  "unanswered": true,
+  "correct": false,
+  "estimated_cost_usd": 0.0022466
+}

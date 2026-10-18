@@ -1,0 +1,4 @@
+run,strategy,questions_finished,correct,unanswered,input_tokens,output_tokens,median_seconds_per_question,total_seconds,estimated_cost_usd
+run_1,S1,20,14,1,44640,1500,1.1827,25.7252,0.010728
+run_1,S2,20,14,1,226400,10774,7.6875,149.9384,0.058209
+run_1,S3,20,16,4,73139,4826,4.7176,94.2391,0.020419

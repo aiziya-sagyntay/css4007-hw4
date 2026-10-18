@@ -1,0 +1,72 @@
+{
+  "question_id": "Q-15",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: Redfen | 18.34": 2,
+    "ANSWER: Redfen | 17.79": 1,
+    "ANSWER: Redfen | 17.70": 1,
+    "ANSWER: Redfen | 17.61": 1
+  },
+  "answer": "ANSWER: Redfen | 18.34",
+  "samples": [
+    {
+      "text": "Kelmarsh: \\(3,268 \\div 11 = 296. starting? \\) pupils per school.  \nRedfen: \\(3,147 \\div 10 = 314.7\\) pupils per school.  \n\nDifference: \\(314.7 - 296.3636\\ldots = 18.3363\\ldots\\), which rounds to 18.34 pupils per school.\n\nANSWER: Redfen | 18.34",
+      "parsed_final_answer": "ANSWER: Redfen | 18.34",
+      "input_tokens": 2259,
+      "output_tokens": 97,
+      "cached_input_tokens": 0,
+      "seconds": 1.4857,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Kelmarsh: 3,268 ÷ 11 = 296.ple pupils per school.  \nRedfen: 3,147 ÷ 10 = 314.7 pupils per school.  \nDifference: 314.7 − 296.3636… = 18.34 pupils per school.\n\nANSWER: Redfen | 18.34",
+      "parsed_final_answer": "ANSWER: Redfen | 18.34",
+      "input_tokens": 2259,
+      "output_tokens": 77,
+      "cached_input_tokens": 2256,
+      "seconds": 1.1209,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Kelmarsh: 3,268 ÷ 11 = 296.91 pupils per school.  \nRedfen: 3,147 ÷ 10 = 314.70 pupils per school.  \nDifference: 314.70 − 296.91 = 17.79 pupils per school.\n\nANSWER: Redfen | 17.79",
+      "parsed_final_answer": "ANSWER: Redfen | 17.79",
+      "input_tokens": 2259,
+      "output_tokens": 75,
+      "cached_input_tokens": 2256,
+      "seconds": 1.3173,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Kelmarsh: \\(3,268 \\div 11 = 296.999...\\) pupils per school.  \nRedfen: \\(3,147 \\div 10 = 314.7\\) pupils per school.  \n\nDifference: \\(314.7 - 296.999... = 17.7\\), so Redfen has more by 17.70 pupils per school.\n\nANSWER: Redfen | 17.70",
+      "parsed_final_answer": "ANSWER: Redfen | 17.70",
+      "input_tokens": 2259,
+      "output_tokens": 92,
+      "cached_input_tokens": 2256,
+      "seconds": 1.3286,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Kelmarsh: \\(3,268 \\div 11 = 296. trimmed\\) pupils per school.  \nRedfen: \\(3,147 \\div 10 = 314.70\\) pupils per school.  \nDifference: \\(314.70 - 296.?? = 17.61\\) pupils per school.\n\nANSWER: Redfen | 17.61",
+      "parsed_final_answer": "ANSWER: Redfen | 17.61",
+      "input_tokens": 2259,
+      "output_tokens": 81,
+      "cached_input_tokens": 2256,
+      "seconds": 1.2795,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11295,
+  "output_tokens": 422,
+  "cached_input_tokens": 9024,
+  "seconds": 6.5324,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0027654
+}

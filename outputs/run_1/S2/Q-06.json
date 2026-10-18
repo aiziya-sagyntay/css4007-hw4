@@ -1,0 +1,69 @@
+{
+  "question_id": "Q-06",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: yes | 14069": 5
+  },
+  "answer": "ANSWER: yes | 14069",
+  "samples": [
+    {
+      "text": "Redfen and Kelmarsh: 20,934 + 24,117 = 45,051 residents. Ossford has 30,982 residents. The combined population is larger by 14,069 residents.\n\nANSWER: yes | 14069",
+      "parsed_final_answer": "ANSWER: yes | 14069",
+      "input_tokens": 2264,
+      "output_tokens": 54,
+      "cached_input_tokens": 0,
+      "seconds": 1.275,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Redfen and Kelmarsh: 20,934 + 24,117 = 45,051 residents. Ossford has 30,982 residents. The combined population is larger by 14,069 residents.\n\nANSWER: yes | 14069",
+      "parsed_final_answer": "ANSWER: yes | 14069",
+      "input_tokens": 2264,
+      "output_tokens": 54,
+      "cached_input_tokens": 2261,
+      "seconds": 1.3005,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Redfen and Kelmarsh: 20,934 + 24,117 = 45,051 residents. Ossford has 30,982 residents. The combined population is larger by 14,069 residents.\n\nANSWER: yes | 14069",
+      "parsed_final_answer": "ANSWER: yes | 14069",
+      "input_tokens": 2264,
+      "output_tokens": 54,
+      "cached_input_tokens": 2261,
+      "seconds": 1.0622,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Redfen and Kelmarsh: 20,934 + 24,117 = 45,051 residents. Ossford has 30,982 residents. The combined population is larger by 14,069 residents.\n\nANSWER: yes | 14069",
+      "parsed_final_answer": "ANSWER: yes | 14069",
+      "input_tokens": 2264,
+      "output_tokens": 54,
+      "cached_input_tokens": 2261,
+      "seconds": 1.1645,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Redfen and Kelmarsh: 20,934 + 24,117 = 45,051 residents. Ossford has 30,982 residents, so the combined population is larger by 14,069 residents.\n\nANSWER: yes | 14069",
+      "parsed_final_answer": "ANSWER: yes | 14069",
+      "input_tokens": 2264,
+      "output_tokens": 55,
+      "cached_input_tokens": 2261,
+      "seconds": 1.5213,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11320,
+  "output_tokens": 271,
+  "cached_input_tokens": 9044,
+  "seconds": 6.324,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0025892
+}

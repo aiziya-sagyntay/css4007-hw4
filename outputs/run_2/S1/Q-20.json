@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-20",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Ashgrove | 2987",
+  "raw_answer": "Calculate budget per resident:\n\n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,488 tenge/resident\n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,475 tenge/resident\n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,603 tenge/resident\n\nAshgrove had the largest budget per resident. It exceeded Ossbridge, the lowest, by approximately 2,987 tenge per resident.\n\nANSWER: Ashgrove | 2987",
+  "samples": [
+    {
+      "text": "Calculate budget per resident:\n\n- Ossbridge: 9,284.5 million ÷ 52,904 = 175,488 tenge/resident\n- Ashgrove: 10,488.1 million ÷ 58,760 = 178,475 tenge/resident\n- Harrowfield: 16,021.7 million ÷ 90,212 = 177,603 tenge/resident\n\nAshgrove had the largest budget per resident. It exceeded Ossbridge, the lowest, by approximately 2,987 tenge per resident.\n\nANSWER: Ashgrove | 2987",
+      "parsed_final_answer": "ANSWER: Ashgrove | 2987",
+      "input_tokens": 2239,
+      "output_tokens": 129,
+      "cached_input_tokens": 2236,
+      "seconds": 1.6882,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2239,
+  "output_tokens": 129,
+  "cached_input_tokens": 2236,
+  "seconds": 1.6882,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0006026
+}

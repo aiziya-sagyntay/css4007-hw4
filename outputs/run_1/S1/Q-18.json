@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-18",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: yes | 40037",
+  "raw_answer": "Millbrook grew from 34,590 to 37,203, a factor of 37,203 ÷ 34,590. Applying the same percentage growth to 2030 gives approximately 40,037 residents, which exceeds 40,000.\n\nANSWER: yes | 40037",
+  "samples": [
+    {
+      "text": "Millbrook grew from 34,590 to 37,203, a factor of 37,203 ÷ 34,590. Applying the same percentage growth to 2030 gives approximately 40,037 residents, which exceeds 40,000.\n\nANSWER: yes | 40037",
+      "parsed_final_answer": "ANSWER: yes | 40037",
+      "input_tokens": 2249,
+      "output_tokens": 62,
+      "cached_input_tokens": 0,
+      "seconds": 1.1686,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2249,
+  "output_tokens": 62,
+  "cached_input_tokens": 0,
+  "seconds": 1.1686,
+  "unanswered": false,
+  "correct": false,
+  "estimated_cost_usd": 0.0005242
+}

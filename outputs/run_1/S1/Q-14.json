@@ -1,0 +1,25 @@
+{
+  "question_id": "Q-14",
+  "strategy": "S1",
+  "model": "gpt-5.6-luna",
+  "answer": "ANSWER: Ashgrove | 4.8",
+  "raw_answer": "Tarnvale: 5,207 ML ÷ 71,388 residents ÷ 365 × 1,000 = 199.8 litres per resident per day.\n\nAshgrove: 4,390 ML ÷ 58,760 residents ÷ 365 × 1,000 = 204.6 litres per resident per day.\n\nAshgrove used 4.8 more litres per resident per day.\n\nANSWER: Ashgrove | 4.8",
+  "samples": [
+    {
+      "text": "Tarnvale: 5,207 ML ÷ 71,388 residents ÷ 365 × 1,000 = 199.8 litres per resident per day.\n\nAshgrove: 4,390 ML ÷ 58,760 residents ÷ 365 × 1,000 = 204.6 litres per resident per day.\n\nAshgrove used 4.8 more litres per resident per day.\n\nANSWER: Ashgrove | 4.8",
+      "parsed_final_answer": "ANSWER: Ashgrove | 4.8",
+      "input_tokens": 2232,
+      "output_tokens": 100,
+      "cached_input_tokens": 0,
+      "seconds": 1.4117,
+      "finish_reason": "stop"
+    }
+  ],
+  "input_tokens": 2232,
+  "output_tokens": 100,
+  "cached_input_tokens": 0,
+  "seconds": 1.4117,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0005664
+}

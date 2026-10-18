@@ -1,0 +1,16 @@
+{
+  "question_id": "Q-01",
+  "strategy": "S3",
+  "model": "gpt-5.6-luna",
+  "answer": "Ossbridge has the higher population density, by **4.6 residents per square kilometre**.\n\nANSWER: Ossbridge | 4.6",
+  "rounds": 4,
+  "tool_calls": 7,
+  "logfile": "outputs/run_1/S3_logs/Q-01_S3.json",
+  "input_tokens": 3528,
+  "output_tokens": 237,
+  "cached_input_tokens": null,
+  "seconds": 4.645,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.00099
+}

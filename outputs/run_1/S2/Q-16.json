@@ -1,0 +1,69 @@
+{
+  "question_id": "Q-16",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: yes | 23.9": 5
+  },
+  "answer": "ANSWER: yes | 23.9",
+  "samples": [
+    {
+      "text": "Ossbridge and Ossford combined area: 1,284.6 + 846.2 = 2,130.8 km². Tarnvale’s area is 2,106.9 km², so the combined area is larger by 23.9 km².\n\nANSWER: yes | 23.9",
+      "parsed_final_answer": "ANSWER: yes | 23.9",
+      "input_tokens": 2258,
+      "output_tokens": 69,
+      "cached_input_tokens": 0,
+      "seconds": 2.2277,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Ossbridge and Ossford combined: 1,284.6 + 846.2 = 2,130.8 km². Tarnvale: 2,106.9 km². The combined area is larger by 23.9 km².\n\nANSWER: yes | 23.9",
+      "parsed_final_answer": "ANSWER: yes | 23.9",
+      "input_tokens": 2258,
+      "output_tokens": 65,
+      "cached_input_tokens": 2255,
+      "seconds": 1.303,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Ossbridge and Ossford combined area: 1,284.6 + 846.2 = 2,130.8 km². Tarnvale’s area is 2,106.9 km², so the combined area is larger by 23.9 km².\n\nANSWER: yes | 23.9",
+      "parsed_final_answer": "ANSWER: yes | 23.9",
+      "input_tokens": 2258,
+      "output_tokens": 69,
+      "cached_input_tokens": 2255,
+      "seconds": 1.0092,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Ossbridge and Ossford combined area: 1,284.6 + 846.2 = 2,130.8 km². Tarnvale’s area is 2,106.9 km², so the combined area is larger by 23.9 km².\n\nANSWER: yes | 23.9",
+      "parsed_final_answer": "ANSWER: yes | 23.9",
+      "input_tokens": 2258,
+      "output_tokens": 69,
+      "cached_input_tokens": 2255,
+      "seconds": 0.9259,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Ossbridge and Ossford combined: 1,284.6 + 846.2 = 2,130.8 km². Tarnvale: 2,106.9 km². The combined area is larger by 23.9 km².\n\nANSWER: yes | 23.9",
+      "parsed_final_answer": "ANSWER: yes | 23.9",
+      "input_tokens": 2258,
+      "output_tokens": 65,
+      "cached_input_tokens": 2255,
+      "seconds": 0.8447,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11290,
+  "output_tokens": 337,
+  "cached_input_tokens": 9020,
+  "seconds": 6.3109,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0026624
+}

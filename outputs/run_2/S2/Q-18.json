@@ -1,0 +1,70 @@
+{
+  "question_id": "Q-18",
+  "strategy": "S2",
+  "model": "gpt-5.6-luna",
+  "k": 5,
+  "vote_counts": {
+    "ANSWER: yes | 40024": 1,
+    "ANSWER: yes | 40014": 4
+  },
+  "answer": "ANSWER: yes | 40014",
+  "samples": [
+    {
+      "text": "Millbrook’s population increased from 34,590 to 37,203, a growth factor of:\n\n37,203 ÷ 34,590 ≈ 1.07583\n\nApplying the same percentage growth to 2030:\n\n37,203 × 1.07583 ≈ 40,024 residents\n\nThis exceeds 40,000.\n\nANSWER: yes | 40024",
+      "parsed_final_answer": "ANSWER: yes | 40024",
+      "input_tokens": 2281,
+      "output_tokens": 82,
+      "cached_input_tokens": 2278,
+      "seconds": 1.3562,
+      "finish_reason": "stop",
+      "sample_number": 1
+    },
+    {
+      "text": "Millbrook’s population growth from 2020 to 2025 was:\n\n\\[\n\\frac{37,203-34,590}{34,590}\\times100 \\approx 7.554\\%\n\\]\n\nApplying the same percentage growth to the 2025 population:\n\n\\[\n37,203 \\times \\frac{37,203}{34,590} \\approx 40,014\n\\]\n\nThis exceeds 40,000 residents.\n\nANSWER: yes | 40014",
+      "parsed_final_answer": "ANSWER: yes | 40014",
+      "input_tokens": 2281,
+      "output_tokens": 101,
+      "cached_input_tokens": 2278,
+      "seconds": 1.5183,
+      "finish_reason": "stop",
+      "sample_number": 2
+    },
+    {
+      "text": "Millbrook’s population increased from 34,590 to 37,203:\n\n- Growth factor = 37,203 ÷ 34,590 ≈ 1.07554\n- Projected 2030 population = 37,203 × 1.07554 ≈ 40,014\n\nThis exceeds 40,000 residents.\n\nANSWER: yes | 40014",
+      "parsed_final_answer": "ANSWER: yes | 40014",
+      "input_tokens": 2281,
+      "output_tokens": 81,
+      "cached_input_tokens": 2278,
+      "seconds": 1.254,
+      "finish_reason": "stop",
+      "sample_number": 3
+    },
+    {
+      "text": "Millbrook’s growth from 2020 to 2025 was:\n\n\\[\n\\frac{37,203-34,590}{34,590}\\times100 \\approx 7.55\\%\n\\]\n\nApplying the same percentage growth to its 2025 population:\n\n\\[\n37,203 \\times \\frac{37,203}{34,590} \\approx 40,014\n\\]\n\nThis would exceed 40,000 residents.\n\nANSWER: yes | 40014",
+      "parsed_final_answer": "ANSWER: yes | 40014",
+      "input_tokens": 2281,
+      "output_tokens": 101,
+      "cached_input_tokens": 2278,
+      "seconds": 1.3718,
+      "finish_reason": "stop",
+      "sample_number": 4
+    },
+    {
+      "text": "Millbrook’s population increased from 34,590 to 37,203:\n\n- Increase: 2,613\n- Growth rate: 2,613 ÷ 34,590 ≈ 7.553%\n- Projected 2030 population: 37,203 × (1 + 0.07553) ≈ 40,014\n\nThis exceeds 40,000 residents.\n\nANSWER: yes | 40014",
+      "parsed_final_answer": "ANSWER: yes | 40014",
+      "input_tokens": 2281,
+      "output_tokens": 92,
+      "cached_input_tokens": 2278,
+      "seconds": 1.3346,
+      "finish_reason": "stop",
+      "sample_number": 5
+    }
+  ],
+  "input_tokens": 11405,
+  "output_tokens": 457,
+  "cached_input_tokens": 11390,
+  "seconds": 6.8353,
+  "unanswered": false,
+  "correct": true,
+  "estimated_cost_usd": 0.0028294
+}
