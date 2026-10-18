@@ -186,61 +186,114 @@ One alternative would be to make a single tool called answer_question that searc
 
 ### What I changed from Part A while coding
 
-<!-- what changed in your plan, and why. "None" is an answer too. -->
+The original split into lookup and calculate stayed the same. In the code I added input and JSON validation, clear errors, a fixed 8-round limit and logs for each question. I also had to set reasoning_effort="none" after an API compatibility error during the first B3 test. This setting was then used consistently for all three strategies. The main tool definitions and the order of operations from Part A were not changed.
 
 ### B2 — Tests
 
-```text
-<!-- pytest output -->
+I ran python -m pytest -v tests/test_tools.py without an API key. The 16 tests check the data lookup, similar and misspelled district names, the archived records, the corrected Brightwater area, normalized water units, arithmetic, division by zero and unsafe expressions.
+
+```
+collecting ... collected 16 items
+
+tests/test_tools.py::test_lookup_2025_population PASSED
+tests/test_tools.py::test_lookup_corrected_area PASSED
+tests/test_tools.py::test_lookup_misspelled_district PASSED
+tests/test_tools.py::test_lookup_similar_district_names PASSED
+tests/test_tools.py::test_lookup_archived_year_cannot_replace_current PASSED
+tests/test_tools.py::test_lookup_water_units_are_normalized PASSED
+tests/test_tools.py::test_lookup_rejects_unsupported_year_or_field PASSED
+tests/test_tools.py::test_calculate_required_multiplication PASSED
+tests/test_tools.py::test_calculate_population_density PASSED
+tests/test_tools.py::test_calculate_parentheses_and_subtraction PASSED
+tests/test_tools.py::test_calculate_division_by_zero PASSED
+tests/test_tools.py::test_calculate_rejects_unsafe_expressions[__import__('os').system('echo hi')] PASSED
+tests/test_tools.py::test_calculate_rejects_unsafe_expressions[(1).__class__] PASSED
+tests/test_tools.py::test_calculate_rejects_unsafe_expressions[9**9**9] PASSED
+tests/test_tools.py::test_calculate_rejects_huge_result PASSED
+tests/test_tools.py::test_calculate_rejects_invalid_input_type PASSED
+
+============================== 16 passed in 0.05s ==============================
 ```
 
 ### B3 — The loop
 
-- Round limit, and why:
-- Where the logs are:
-- Real Q-09 conversation compared with my A3 version, what is different:
+- Round limit, and why: I set the maximum number of rounds to 8. The model needs time to look up several facts, calculate intermediate results and give the final answer. The limit prevents infinite tool-calling loops; if it is reached without a final answer, the question is marked unanswered.
+- Where the logs are: The standalone Q-09 test produced outputs/Q-09_S3.json. In the two complete runs, the detailed tool conversations are under outputs/run_1/S3_logs/ and outputs/run_2/S3_logs/. These JSON logs record each tool call, its inputs, outputs, time, model rounds and token usage. The per-question strategy results are saved under the corresponding S1/, S2/ and S3/ folders.
+- Real Q-09 conversation compared with my A3 version, what is different: The actual execution followed my planned steps. In round 1 the model made four lookup calls for both populations and areas, including Brightwater's corrected area of 921.4 km². In round 2 it made two calculate calls for population densities. In round 3 it calculated their difference, and in round 4 it gave the final answer, Millbrook | 0.6. The run used 4 rounds, 7 tool calls, 3,513 input tokens and 229 output tokens, taking 6.93 seconds. The main difference is that the real log also has actual call IDs, durations and usage counts; the mathematical steps and the answer matched the hand-written plan.
 
 ### B4 — Three strategies
 
 **What I kept the same:**
+- The model was gpt-5.6-luna for S1, S2 and S3, with reasoning_effort="none".
+- All strategies answered exactly the same 20 questions from data/questions.json, in the same order, and used the same reference answers only for scoring after generation.
+- Each strategy was instructed to finish with ANSWER: <name or yes/no> | <number> and use the question's requested number of decimals. The strategies differed only in how they used documents, reasoning samples or tools.
+- S1 received the full corpus and made one model call. S2 received the same corpus, made 5 independent model calls per question (k = 5), and voted on the complete label-and-number answer (ties use the first observed answer). S3 did not receive the corpus in the prompt and used lookup and calculate, with a limit of 8 rounds.
+- I did not explicitly set temperature in any strategy: all used the API default. S2 therefore relied on variation across separate requests rather than a custom temperature value. This is a limitation of the experiment.
+- Input and output tokens were summed from the API usage counts of every call, including all five S2 samples and all rounds of S3. Time was measured as wall-clock seconds. The reported cost is an estimate using $0.20 per million input tokens and $1.20 per million output tokens, without prompt-caching discounts.
 
-<!-- model, temperature, k, prompts, answer format, anything else -->
-
-**My rule for a correct answer** (written before the first full run):
+**My rule for a correct answer** (fixed in run.py before the first full run):
+The final line must have a parsable ANSWER: label | number format. The label must match the reference exactly. The number is rounded to the specified decimals, and a difference of at most one unit in the last decimal place is allowed. A missing or invalid final line is counted as unanswered. A parsable answer with a wrong label or a number outside this tolerance is counted as incorrect. I used the same rule for every strategy and both runs.
 
 | Run | Strategy | Correct /20 | Unanswered | Input tokens | Output tokens | Median seconds per question | Total seconds | Cost ($) |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 1 | S1 direct | | | | | | | |
-| 1 | S2 think and vote (k = ) | | | | | | | |
-| 1 | S3 tools | | | | | | | |
-| 2 | S1 direct | | | | | | | |
-| 2 | S2 think and vote (k = ) | | | | | | | |
-| 2 | S3 tools | | | | | | | |
+| 1 | S1 direct | 14/20 | 1 | 44,640 | 1,500 | 1.18 | 25.73 | 0.010728 |
+| 1 | S2 think and vote (k = 5) | 14/20 | 1 | 226,400 | 10,774 | 7.69 | 149.94 | 0.058209 |
+| 1 | S3 tools | 16/20 | 4 | 73,139 | 4,826 | 4.72 | 94.24 | 0.020419 |
+| 2 | S1 direct | 11/20 | 1 | 44,640 | 1,398 | 1.22 | 25.94 | 0.010606 |
+| 2 | S2 think and vote (k = 5) | 15/20 | 1 | 226,400 | 10,575 | 6.96 | 149.67 | 0.057970 |
+| 2 | S3 tools | 18/20 | 2 | 67,169 | 4,698 | 4.72 | 90.59 | 0.019071 |
 
 **Per question (run 1):**
 
 | Question | S1 | S2 | S3 |
 |---|:---:|:---:|:---:|
-| Q-01 | | | |
-| Q-02 | | | |
-| Q-03 | | | |
-| Q-04 | | | |
-| Q-05 | | | |
-| Q-06 | | | |
-| Q-07 | | | |
-| Q-08 | | | |
-| Q-09 | | | |
-| Q-10 | | | |
-| Q-11 | | | |
-| Q-12 | | | |
-| Q-13 | | | |
-| Q-14 | | | |
-| Q-15 | | | |
-| Q-16 | | | |
-| Q-17 | | | |
-| Q-18 | | | |
-| Q-19 | | | |
-| Q-20 | | | |
+| Q-01 | ✓ | ✓ | ✓ |
+| Q-02 | ✓ | ✓ | ✗ |
+| Q-03 | ✓ | ✓ | ✓ |
+| Q-04 | ✓ | ✓ | ✓ |
+| Q-05 | ✗ | ✗ | ✓ |
+| Q-06 | ✓ | ✓ | ✓ |
+| Q-07 | ✓ | ✓ | ✓ |
+| Q-08 | ✓ | ✓ | ✗ |
+| Q-09 | ✓ | ✓ | ✓ |
+| Q-10 | ✓ | ✓ | ✓ |
+| Q-11 | ✓ | ✓ | ✓ |
+| Q-12 | ✓ | ✓ | ✓ |
+| Q-13 | ✗ | ✗ | ✗ |
+| Q-14 | ✓ | ✗ | ✓ |
+| Q-15 | ✗ | ✗ | ✓ |
+| Q-16 | ✓ | ✓ | ✓ |
+| Q-17 | ✗ | ✗ | ✗ |
+| Q-18 | ✗ | ✓ | ✓ |
+| Q-19 | ✓ | ✓ | ✓ |
+| Q-20 | ✗ | ✗ | ✓ |
+
+**Per question (run 2):**
+
+| Question | S1 | S2 | S3 |
+|---|:---:|:---:|:---:|
+| Q-01 | ✓ | ✓ | ✓ |
+| Q-02 | ✓ | ✓ | ✓ |
+| Q-03 | ✓ | ✓ | ✓ |
+| Q-04 | ✓ | ✓ | ✓ |
+| Q-05 | ✗ | ✗ | ✓ |
+| Q-06 | ✓ | ✓ | ✓ |
+| Q-07 | ✗ | ✓ | ✓ |
+| Q-08 | ✗ | ✓ | ✗ |
+| Q-09 | ✓ | ✓ | ✓ |
+| Q-10 | ✓ | ✓ | ✓ |
+| Q-11 | ✗ | ✓ | ✓ |
+| Q-12 | ✓ | ✓ | ✓ |
+| Q-13 | ✗ | ✗ | ✗ |
+| Q-14 | ✗ | ✗ | ✓ |
+| Q-15 | ✗ | ✗ | ✓ |
+| Q-16 | ✓ | ✓ | ✓ |
+| Q-17 | ✗ | ✓ | ✓ |
+| Q-18 | ✓ | ✓ | ✓ |
+| Q-19 | ✓ | ✓ | ✓ |
+| Q-20 | ✗ | ✗ | ✓ |
+
+These are the scores produced by my automatic checker, without changing the rule between runs. One relevant limitation is strict output formatting: a response that adds a unit after the number in the final ANSWER: line can be classified as unanswered even when its calculation in the main text is correct (for example, S3 on Q-08 and Q-13). I will discuss such errors in Part C rather than silently changing the results.
 
 ---
 
