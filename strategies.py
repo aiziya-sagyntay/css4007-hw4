@@ -169,6 +169,7 @@ def run_tools(client, question, question_id, decimals=None, *, model=MODEL,
             response = client.chat.completions.create(
                 model=model, messages=messages, tools=TOOL_SCHEMAS,
                 tool_choice="auto",
+                reasoning_effort="none",
             )
             api_elapsed = time.perf_counter() - start_api
             usage = response.usage
