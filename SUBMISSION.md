@@ -1,4 +1,4 @@
-<img width="840" height="176" alt="image" src="https://github.com/user-attachments/assets/4b87a52b-3c44-45d7-a372-bf70b9714c97" /># HW4 — submission
+# HW4 — submission
 
 **AI assistance:** I used ChatGPT to help structure and draft Part A, review the tool specifications, and check the Q-09 calculations.
 
