@@ -165,7 +165,8 @@ The conversation I expect between the model and the tools is:
     ]
   },
   {"role": "tool", "tool_call_id": "call_7", "content": "{\"expression\":\"49.04165568151859 - 48.48599956587801\",\"value\":0.55565611564058}"},
-  {"role": "assistant", "content": "Millbrook has the higher population density in 2025, by 0.6 residents per square kilometre. ANSWER: Millbrook | 0.6"}
+  
+{"role": "assistant", "content": "Millbrook has the higher population density in 2025, by 0.6 residents per square kilometre.\n\nANSWER: Millbrook | 0.6"}
 ]
 ```
 
