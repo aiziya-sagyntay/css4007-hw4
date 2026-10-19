@@ -177,7 +177,7 @@ The conversation I expect between the model and the tools is:
 - Brightwater density = 44,675 / 921.4 = 48.4860 residents/km².
 - Millbrook density = 37,203 / 758.6 = 49.0417 residents/km².
 - Difference = 49.04165568 - 48.48599957 = 0.55565611 ≈ 0.6 residents/km², rounded to one decimal place.
-So the expected answer is Millbrook | 0.6. Using the old, incorrect Brightwater area (912.4 km²) would change the comparison, which is why the correction matters.
+Using the incorrect Brightwater area would change the difference, but not the higher-density district.
 
 ### A4 — Why I split it this way
 
