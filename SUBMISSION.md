@@ -1,6 +1,6 @@
 # HW4 — submission
 
-**AI assistance:** I used ChatGPT to help structure and draft Part A, review the tool specifications, and check the Q-09 calculations.
+**AI assistance:** I used ChatGPT to help with coding, reviewing the tasks, and analyzing the results.
 
 ---
 
