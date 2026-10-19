@@ -1,4 +1,4 @@
-# HW4 — submission
+<img width="840" height="176" alt="image" src="https://github.com/user-attachments/assets/4b87a52b-3c44-45d7-a372-bf70b9714c97" /># HW4 — submission
 
 **AI assistance:** I used ChatGPT to help structure and draft Part A, review the tool specifications, and check the Q-09 calculations.
 
@@ -300,24 +300,74 @@ These are the scores produced by my automatic checker, without changing the rule
 ## Part C — Explain and choose (Hard)
 
 ### C1 — Does the tool description matter?
+I tested Q-02, Q-05, Q-08, Q-09 and Q-13 again with the lookup description replaced by "Looks things up.". I kept the same model, question, tool parameters, calculator and round limit. The table compares the detailed-description results from run 1 with the new vague-description test.
 
 | Question | Calls (your description) | Calls (vague) | Answer (yours) | Answer (vague) |
 |---|---:|---:|---|---|
-| | | | | |
+| Q-02 | 7 | 7 | Harrowfield — 1.69 percentage points | Harrowfield — 1.69 percentage points |
+| Q-05 | 7 | 7 | Coldharbour — 14235 | Coldharbour — 14235 |
+| Q-08 | 4 | 6 | Brightwater — 72.46 million tenge | Brightwater — 72.46 million tenge |
+| Q-09 | 7 | 7 | Millbrook — 0.6 | Millbrook — 0.6 |
+| Q-13 | 9 | 9 | Coldharbour — 4.16% | Coldharbour — 4.16% |
+
+The final answers were unchanged on all five questions. For Q-08, the number of calls increased from 4 to 6, and the tool inputs changed. For the other four questions, the number of calls and inputs remained the same. This suggests that a clear tool description can sometimes reduce unnecessary tool calls, but the five-question test does not show an improvement in accuracy. The parameter names, field choices, and system instructions were still detailed, so making only the lookup description vague did not remove all guidance.
+
+Under my original strict answer parser, both versions scored only 2/5 correct: Q-05 and Q-09. Q-02, Q-08 and Q-13 had the right information but added units in the final ANSWER: line, which my parser rejected. I kept the original scoring rule and did not change these results after seeing them.
 
 ### C2 — Three mistakes explained
 
+S1 — Direct, Q-05 (run 1). The model selected the correct district, Coldharbour, but made an arithmetic error when comparing 2025 budgets per resident. Its log says: Stonecairn: 2,884.6 million ÷ 14,926 = 193,155 tenge per resident, followed by ANSWER: Coldharbour | 14345. The correct Stonecairn figure is about 193,260 tenge per resident, and Coldharbour's is about 207,495, giving a difference of 14,235 tenge per resident. S1 had the necessary facts in the prompt, but it calculated the numerical result itself without a calculator to verify it.
+
+S2 — Think and Vote, Q-14 (run 1). The vote counts were Tarnvale | 0.0 twice, Tarnvale | 0.2 once, Ashgrove | 4.8 once and Ashgrove | 4.7 once. The final vote therefore selected ANSWER: Tarnvale | 0.0, while the reference was Ashgrove | 4.9 litres per resident per day. In some samples, the model used 1,000 instead of 1,000,000 to convert megalitres to litres and got around 0.2 litres per resident per day. Asking five times can reduce random mistakes when most samples are independently likely to be correct, but it cannot reliably fix a shared conversion error; here the correct district's votes were also split between different numbers.
+
+S3 — Tools, Q-17 (run 1). The first round correctly looked up Harrowfield's and Ossbridge's water use and population, plus the tariff. However, the model then sent 7146 * 1000000 * 142.35 / 90212 to calculate, which returned {"error": "Result exceeds allowed limits"}. The main problem was treating one megalitre as 1,000,000 cubic metres, although it equals 1,000 cubic metres. The model retried several calculations instead of fixing the unit conversion. It used 8 rounds and 13 tool calls, reached the round limit and finished with ANSWER: UNANSWERED | NA. In run 2 it used the correct conversion and answered Harrowfield | 884 in 4 rounds. The calculator stopped overly large calculations, but it could not know the unit conversion the model intended. 
+
+These examples explain both the benefit and the cost of tools. A calculator can make arithmetic deterministic once the expression is correct, but it cannot correct a wrong formula or unit. Each extra S3 round also resends more conversation history; in Q-17 run 1, input tokens rose from 581 in round 1 to 1,379 in round 8, for 8,953 input tokens overall.
+
 ### C3 — Which strategy I would use, and what would change it
+
+For these twenty questions, I would choose S3 — Tools. It scored 16/20 and 18/20 in the two runs, or 85% on average, compared with 72.5% for S2 and 62.5% for S1. Its estimated cost was $0.020419 and $0.019071 per run, compared with around $0.058 for S2. S3 also took about 4.72 seconds per question at the median, faster than S2 (6.96–7.69 seconds), although it was slower than S1. Across both runs, S1 used 89,280 input tokens and 2,898 output tokens, S2 used 452,800 input tokens and 21,349 output tokens, and S3 used 140,308 input tokens and 9,524 output tokens. S3 required more tokens than S1 but considerably fewer than S2.
+
+I would not choose S1 as the default because its manual calculations were less reliable, despite being the cheapest and fastest. I would not choose S2 because five samples cost about 5.45 times as much as S1 across the two runs, and voting sometimes repeated or combined wrong calculations. S3 makes fact retrieval traceable to source documents and leaves arithmetic to a restricted calculator, although Q-17 shows that wrong units can still cause problems.
+
+My choice would change with the situation. If a question were simple, such as Q-10 about founding years, and speed or budget were the main priority, I would use S1: all three strategies answered Q-10 correctly in both runs, and S1 was much faster. If I had 100,000 documents, I would still prefer a tool-based approach but replace the current full-file lookup with an indexed retrieval system. If there were no arithmetic and tool implementation was not available, S1 could also be sufficient. I would use S2 only if repeated answers gave a measurable reliability benefit on the relevant type of question and the extra cost was acceptable.
 
 ### C4 — How sure I can be
 
+The two runs were not identical. S1 dropped from 14/20 to 11/20 (a 15-percentage-point change), S2 increased from 14/20 to 15/20 (5 points), and S3 improved from 16/20 to 18/20 (10 points). S3 beat S2 by 2 questions in run 1 and by 3 questions in run 2. Their average accuracy gap was 12.5 percentage points, which is close to the run-to-run changes seen in this experiment.
+
+I therefore think S3 is the best choice for this homework, but I cannot claim that it will always be better. There were only 20 distinct questions about one fictional region, and repeating the same questions does not create 40 independent examples. I would want roughly 150–200 new, varied questions, preferably across several document collections, and more repeated runs before trusting a smaller accuracy gap. I would then compare paired results and uncertainty intervals instead of relying only on the winning percentage. The strict ANSWER: parser is another limitation because it marked some numerically correct responses as unanswered when they included units after the number.
+
 ### Final questions
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
+1. When the model sends a tool_calls message, what has actually run so far?
+
+Only the model's API call has run. The model has requested a function, but it has not executed lookup or calculate itself. My Python loop must validate the request, call the local function, and send its result back with the matching tool_call_id.
+
+2. Why does arguments arrive as a string, and what goes wrong if you pass it straight into your function?
+
+The model produces tool arguments as JSON text, so I need to parse it with json.loads() and check the required keys and types. Passing the raw string directly would not match the function's parameters and could cause errors. Validation also prevents unexpected arguments from reaching the tool.
+
+3. How many tokens do your two tool definitions add to every S3 request? Measure it.
+
+I measured the same messages with and without the two tool definitions, using tool_choice="none" in the tool-enabled request. The request used 169 input tokens without tools and 569 with tools, a difference of 400 input tokens. This is the measured prompt overhead for the two definitions in that test, not the total cost of running tools across multiple rounds.
+
+4. How much more did S2 cost than S1? Give the number from your table and explain it.
+
+Across both runs, S2 cost an estimated $0.116179, while S1 cost $0.021334. That is $0.094845 more, or about 5.45 times the cost of S1. S2 made five model calls per question instead of one, repeatedly sending the corpus; these are uncached-rate estimates, not exact billed amounts.
+
+5. Which question needed the most rounds in S3, and why?
+
+Q-17 in run 1 needed the most: it reached the limit of 8 rounds and made 13 tool calls without producing a valid answer. The model repeatedly used the wrong megalitre-to-cubic-metre conversion and received large-number errors. In run 2, the same question took 4 rounds and was answered correctly.
+
+6. What would you change in lookup if there were 100,000 documents?
+
+I would not read and search all documents again on each call. I would build a structured or full-text index of districts, fields, years, sources and correction notices, then retrieve only a few relevant records. This would make lookup faster and reduce irrelevant information while preserving source IDs.
+
+7. What stops your calculate from running dangerous code? Could the model still make it misbehave?
+
+My calculator uses Python's ast parser, not eval() or exec(), and accepts only numeric constants and basic +, -, *, / operations. It also limits expression length, nesting depth, numerical size and division by zero. The model cannot run arbitrary Python through it, but it can still supply a mathematically valid expression with wrong units or a wrong formula, as happened in Q-17.
+
+8. For which kind of question did tools help most, and for which did they not help at all?
+
+Tools helped most on multi-step numerical comparisons, especially budgets or rates per resident and unit conversions: S3 answered Q-05, Q-15 and Q-20 correctly in both runs when S1 and S2 did not. They added little benefit for simple factual comparisons such as Q-10, where all three strategies were correct and S1 was faster. Tools also could not prevent final-answer formatting mistakes on Q-08 and Q-13, even though the calculations were correct.
